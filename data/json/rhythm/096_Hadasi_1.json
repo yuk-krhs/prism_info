@@ -1,6 +1,6 @@
 {
   "Id": 96,
-  "Tag": "096_Hadasi",
+  "AudioSource": "096_Hadasi",
   "Name": "裸足じゃイラレナイ",
   "Difficulty": 1,
   "Notes": [
@@ -206,27 +206,27 @@
     { "Index": 199, "TimeValue": 115.0568, "Time": "01:55.0568", "Line": 0, "Width": 0, "Type": 112 },
     { "Index": 200, "TimeValue": 115.2272, "Time": "01:55.2272", "Line": 0, "Width": 0, "Type": 112 }
   ],
-  "Groups": [
-    { "Index": 0, "BeginNoteIndex": 7, "EndNoteIndex": 8, "Type": 0, "NoteIndices": [ 118, 119, 120, 121, 122, 123, 124 ] },
-    { "Index": 1, "BeginNoteIndex": 9, "EndNoteIndex": 10, "Type": 0, "NoteIndices": [ 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135 ] },
-    { "Index": 2, "BeginNoteIndex": 11, "EndNoteIndex": 12, "Type": 2, "NoteIndices": [ 136, 137, 138, 139, 140, 141, 142 ] },
-    { "Index": 3, "BeginNoteIndex": 25, "EndNoteIndex": 26, "Type": 2, "NoteIndices": [ 143, 144, 145 ] },
-    { "Index": 4, "BeginNoteIndex": 30, "EndNoteIndex": 31, "Type": 2, "NoteIndices": [ 146, 147, 148 ] },
-    { "Index": 5, "BeginNoteIndex": 44, "EndNoteIndex": 46, "Type": 2, "NoteIndices": [ 149, 150, 151, 152 ] },
-    { "Index": 6, "BeginNoteIndex": 46, "EndNoteIndex": 45, "Type": 1, "NoteIndices": [ 153, 154, 155 ] },
-    { "Index": 7, "BeginNoteIndex": 56, "EndNoteIndex": 55, "Type": 2, "NoteIndices": [ 156, 157, 158, 159 ] },
-    { "Index": 8, "BeginNoteIndex": 55, "EndNoteIndex": 57, "Type": 1, "NoteIndices": [ 160, 161, 162 ] },
-    { "Index": 9, "BeginNoteIndex": 76, "EndNoteIndex": 78, "Type": 2, "NoteIndices": [ 163, 164 ] },
-    { "Index": 10, "BeginNoteIndex": 78, "EndNoteIndex": 77, "Type": 1, "NoteIndices": [ 165 ] },
-    { "Index": 11, "BeginNoteIndex": 81, "EndNoteIndex": 79, "Type": 2, "NoteIndices": [ 166, 167 ] },
-    { "Index": 12, "BeginNoteIndex": 79, "EndNoteIndex": 80, "Type": 1, "NoteIndices": [ 168 ] },
-    { "Index": 13, "BeginNoteIndex": 86, "EndNoteIndex": 85, "Type": 2, "NoteIndices": [ 169, 170 ] },
-    { "Index": 14, "BeginNoteIndex": 85, "EndNoteIndex": 87, "Type": 1, "NoteIndices": [ 171 ] },
-    { "Index": 15, "BeginNoteIndex": 95, "EndNoteIndex": 93, "Type": 2, "NoteIndices": [ 172, 173 ] },
-    { "Index": 16, "BeginNoteIndex": 93, "EndNoteIndex": 91, "Type": 1, "NoteIndices": [ 174 ] },
-    { "Index": 17, "BeginNoteIndex": 96, "EndNoteIndex": 97, "Type": 2, "NoteIndices": [ 175, 176, 177, 178, 179, 180, 181 ] },
-    { "Index": 18, "BeginNoteIndex": 98, "EndNoteIndex": 99, "Type": 2, "NoteIndices": [ 182, 183, 184, 185, 186, 187, 188 ] },
-    { "Index": 19, "BeginNoteIndex": 106, "EndNoteIndex": 108, "Type": 2, "NoteIndices": [ 189, 190, 191, 192, 193, 194, 195 ] },
-    { "Index": 20, "BeginNoteIndex": 108, "EndNoteIndex": 107, "Type": 1, "NoteIndices": [ 109, 110, 196, 197, 198, 199, 200 ] }
+  "NoteLines": [
+    { "Index": 0, "Head": 7, "Tail": 8, "Type": 0, "Notes": [     118, 119, 120, 121, 122, 123, 124 ] },
+    { "Index": 1, "Head": 9, "Tail": 10, "Type": 0, "Notes": [     125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135 ] },
+    { "Index": 2, "Head": 11, "Tail": 12, "Type": 2, "Notes": [     136, 137, 138, 139, 140, 141, 142 ] },
+    { "Index": 3, "Head": 25, "Tail": 26, "Type": 2, "Notes": [     143, 144, 145 ] },
+    { "Index": 4, "Head": 30, "Tail": 31, "Type": 2, "Notes": [     146, 147, 148 ] },
+    { "Index": 5, "Head": 44, "Tail": 46, "Type": 2, "Notes": [     149, 150, 151, 152 ] },
+    { "Index": 6, "Head": 46, "Tail": 45, "Type": 1, "Notes": [     153, 154, 155 ] },
+    { "Index": 7, "Head": 56, "Tail": 55, "Type": 2, "Notes": [     156, 157, 158, 159 ] },
+    { "Index": 8, "Head": 55, "Tail": 57, "Type": 1, "Notes": [     160, 161, 162 ] },
+    { "Index": 9, "Head": 76, "Tail": 78, "Type": 2, "Notes": [     163, 164 ] },
+    { "Index": 10, "Head": 78, "Tail": 77, "Type": 1, "Notes": [     165 ] },
+    { "Index": 11, "Head": 81, "Tail": 79, "Type": 2, "Notes": [     166, 167 ] },
+    { "Index": 12, "Head": 79, "Tail": 80, "Type": 1, "Notes": [     168 ] },
+    { "Index": 13, "Head": 86, "Tail": 85, "Type": 2, "Notes": [     169, 170 ] },
+    { "Index": 14, "Head": 85, "Tail": 87, "Type": 1, "Notes": [     171 ] },
+    { "Index": 15, "Head": 95, "Tail": 93, "Type": 2, "Notes": [     172, 173 ] },
+    { "Index": 16, "Head": 93, "Tail": 91, "Type": 1, "Notes": [     174 ] },
+    { "Index": 17, "Head": 96, "Tail": 97, "Type": 2, "Notes": [     175, 176, 177, 178, 179, 180, 181 ] },
+    { "Index": 18, "Head": 98, "Tail": 99, "Type": 2, "Notes": [     182, 183, 184, 185, 186, 187, 188 ] },
+    { "Index": 19, "Head": 106, "Tail": 108, "Type": 2, "Notes": [     189, 190, 191, 192, 193, 194, 195 ] },
+    { "Index": 20, "Head": 108, "Tail": 107, "Type": 1, "Notes": [     109, 110, 196, 197, 198, 199, 200 ] }
   ]
 }

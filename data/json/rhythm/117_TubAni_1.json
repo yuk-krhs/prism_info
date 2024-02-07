@@ -1,6 +1,6 @@
 {
   "Id": 117,
-  "Tag": "117_TubAni",
+  "AudioSource": "117_TubAni",
   "Name": "ツバサグラビティ(アニメOP ver.)",
   "Difficulty": 1,
   "Notes": [
@@ -191,20 +191,20 @@
     { "Index": 184, "TimeValue": 85.7668, "Time": "01:25.7668", "Line": 0, "Width": 0, "Type": 112 },
     { "Index": 185, "TimeValue": 85.9509, "Time": "01:25.9509", "Line": 0, "Width": 0, "Type": 112 }
   ],
-  "Groups": [
-    { "Index": 0, "BeginNoteIndex": 8, "EndNoteIndex": 9, "Type": 1, "NoteIndices": [ 146, 147, 148, 149, 150 ] },
-    { "Index": 1, "BeginNoteIndex": 21, "EndNoteIndex": 22, "Type": 0, "NoteIndices": [ 23, 24, 25, 151, 152, 153, 154 ] },
-    { "Index": 2, "BeginNoteIndex": 36, "EndNoteIndex": 37, "Type": 0, "NoteIndices": [ 38, 39, 40, 155, 156, 157, 158 ] },
-    { "Index": 3, "BeginNoteIndex": 46, "EndNoteIndex": 47, "Type": 0, "NoteIndices": [ 48, 49, 50, 159, 160 ] },
-    { "Index": 4, "BeginNoteIndex": 60, "EndNoteIndex": 61, "Type": 0, "NoteIndices": [ 64, 65, 161, 162, 163 ] },
-    { "Index": 5, "BeginNoteIndex": 62, "EndNoteIndex": 63, "Type": 0, "NoteIndices": [ 66, 67, 164, 165, 166 ] },
-    { "Index": 6, "BeginNoteIndex": 70, "EndNoteIndex": 71, "Type": 0, "NoteIndices": [ 72, 167, 168, 169, 170, 171, 172 ] },
-    { "Index": 7, "BeginNoteIndex": 82, "EndNoteIndex": 83, "Type": 0, "NoteIndices": [ 84, 85, 86, 173, 174, 175, 176 ] },
-    { "Index": 8, "BeginNoteIndex": 93, "EndNoteIndex": 94, "Type": 0, "NoteIndices": [ 95, 96, 97, 98, 99, 100 ] },
-    { "Index": 9, "BeginNoteIndex": 108, "EndNoteIndex": 109, "Type": 0, "NoteIndices": [ 110, 111, 112, 113, 114, 115 ] },
-    { "Index": 10, "BeginNoteIndex": 120, "EndNoteIndex": 121, "Type": 0, "NoteIndices": [ 177, 178, 179, 180 ] },
-    { "Index": 11, "BeginNoteIndex": 126, "EndNoteIndex": 127, "Type": 0, "NoteIndices": [ 130, 131 ] },
-    { "Index": 12, "BeginNoteIndex": 128, "EndNoteIndex": 129, "Type": 0, "NoteIndices": [ 132, 133, 134, 181, 182, 183, 184, 185 ] },
-    { "Index": 13, "BeginNoteIndex": 135, "EndNoteIndex": 136, "Type": 0, "NoteIndices": [ 137, 138, 139, 140, 141, 142, 143 ] }
+  "NoteLines": [
+    { "Index": 0, "Head": 8, "Tail": 9, "Type": 1, "Notes": [     146, 147, 148, 149, 150 ] },
+    { "Index": 1, "Head": 21, "Tail": 22, "Type": 0, "Notes": [     23, 24, 25, 151, 152, 153, 154 ] },
+    { "Index": 2, "Head": 36, "Tail": 37, "Type": 0, "Notes": [     38, 39, 40, 155, 156, 157, 158 ] },
+    { "Index": 3, "Head": 46, "Tail": 47, "Type": 0, "Notes": [     48, 49, 50, 159, 160 ] },
+    { "Index": 4, "Head": 60, "Tail": 61, "Type": 0, "Notes": [     64, 65, 161, 162, 163 ] },
+    { "Index": 5, "Head": 62, "Tail": 63, "Type": 0, "Notes": [     66, 67, 164, 165, 166 ] },
+    { "Index": 6, "Head": 70, "Tail": 71, "Type": 0, "Notes": [     72, 167, 168, 169, 170, 171, 172 ] },
+    { "Index": 7, "Head": 82, "Tail": 83, "Type": 0, "Notes": [     84, 85, 86, 173, 174, 175, 176 ] },
+    { "Index": 8, "Head": 93, "Tail": 94, "Type": 0, "Notes": [     95, 96, 97, 98, 99, 100 ] },
+    { "Index": 9, "Head": 108, "Tail": 109, "Type": 0, "Notes": [     110, 111, 112, 113, 114, 115 ] },
+    { "Index": 10, "Head": 120, "Tail": 121, "Type": 0, "Notes": [     177, 178, 179, 180 ] },
+    { "Index": 11, "Head": 126, "Tail": 127, "Type": 0, "Notes": [     130, 131 ] },
+    { "Index": 12, "Head": 128, "Tail": 129, "Type": 0, "Notes": [     132, 133, 134, 181, 182, 183, 184, 185 ] },
+    { "Index": 13, "Head": 135, "Tail": 136, "Type": 0, "Notes": [     137, 138, 139, 140, 141, 142, 143 ] }
   ]
 }
