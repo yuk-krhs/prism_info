@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yuk-krhs.github.io/prism_info/</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2024-03-02<lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://yuk-krhs.github.io/prism_info/index.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-02<lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yuk-krhs.github.io/prism_info/update-all</loc>
+    <lastmod>2024-03-02<lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yuk-krhs.github.io/prism_info/rhythm.html</loc>
+    <lastmod>2024-03-02<lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://yuk-krhs.github.io/prism_info/rhythm_raw.html</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2024-03-02<lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://yuk-krhs.github.io/prism_info/rhythm_transparent.html</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2024-03-02<lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
