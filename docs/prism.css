@@ -218,3 +218,19 @@ td.list.rhythm.expert:hover { background-color: #fff; }
 td.list.rhythm.master:hover { background-color: #fff; }
 
 a.rhythm	 			{ display: block; }
+a.update.streaming.youtube {
+	display:			inline;
+	text-align:			left;
+	pointer-events:		auto;
+	text-decoration:	underline;
+	color:				blue;
+}
+
+a.update.streaming.youtube:hover {
+	display:			inline;
+	text-align:			left;
+	pointer-events:		auto;
+	text-decoration:	none;
+	color:				blue;
+	background:			#eef;
+}
