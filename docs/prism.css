@@ -30,6 +30,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	border-style: none;
+	table-layout: fixed;
 }
 
 td {
@@ -127,7 +128,7 @@ table.update			{ width: 1000px; }
 h2.update.month			{ width: 992px; }
 th.update				{ width: 10%; }
 td.update				{ width: 55%; }
-td.update.id			{ width: 35%; }
+td.update.id			{ width: 35%; word-wrap: break-word; }
 
 /* ID非表示 */
 table.update			{ width: 780px; }
@@ -149,10 +150,11 @@ h3.update.day			{ font-size: 14px; margin-top: 10px; margin-bottom: 0px; }
 span.update.pidol.star.label		{ width: 32px; }
 span.update.support.rarity.label	{ width: 40px; }
 span.update.cloth.label				{ width: 50px; }
-span.update.gasha.pickup-p	{ color: #44f; font-size: 12px; font-weight: bold; }
-span.update.gasha.pickup-s	{ color: #f66; font-size: 12px; font-weight: bold; }
-span.update.pidol.gasha		{ color: #44f; font-size: 12px; font-weight: bold; }
-span.update.support.gasha	{ color: #f66; font-size: 12px; font-weight: bold; }
+span.update.gasha.pickup-p			{ color: #44f; font-size: 12px; font-weight: bold; }
+span.update.gasha.pickup-s			{ color: #f66; font-size: 12px; font-weight: bold; }
+span.update.pidol.gasha				{ color: #44f; font-size: 12px; font-weight: bold; }
+span.update.support.gasha			{ color: #f66; font-size: 12px; font-weight: bold; }
+span.update.obtain.season-pass		{ color: #2b2; font-size: 12px; font-weight: bold; }
 
 th.update.gasha			{ background-color: #fee; }
 th.update.event			{ background-color: #ffe; }
@@ -160,6 +162,8 @@ th.update.song			{ background-color: #efe; }
 th.update.pidol			{ background-color: #eff; }
 th.update.support		{ background-color: #eef; }
 th.update.clothes		{ background-color: #fef; }
+th.update.season-pass	{ background-color: #beb; }
+th.update.streaming		{ background-color: #eee; }
 
 span.update.label {
 	display:			inline-block;
