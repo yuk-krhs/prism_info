@@ -6,13 +6,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <link rel="stylesheet" type="text/css" media="all" href="prism.css">
-    <title>シャニソン譜面画像(縦長) - SONG for PRISM</title>
+    <script type="text/javascript" src="prism.js"></script>
+    <title>シャニソン 譜面画像(縦長) - SONG for PRISM</title>
   </head>
   <body class="rhythm">
+<script>
+  rhythm_display(get_cookie('rhythm_label', false));
+</script>
 <table class="head links">
 <tr>
 <td class="head title">
-<span class="head title"><span class="head game-title">SONG for PRISM</span>&nbsp;&nbsp;<span class="head page-title">譜面画像</span></span>
+<span class="head title"><span class="head game-title">SONG for PRISM</span>&nbsp;&nbsp;<span class="head page-title">譜面画像(縦長)</span></span>
 </td>
 <td class="head link">
 <span class="head link"><a class="head link"href="index.html">更新情報</a></span>
@@ -22,10 +26,17 @@
 </td>
 </tr>
 </table>
-<div>譜面画像(縦長)&nbsp;<a href="rhythm.html">譜面画像</a>&nbsp;<a href="rhythm_transparent.html">透明背景</a></div>
 <table class="list rhythm" style="margin-top: 0.5em">
 <tr>
-<th class="list rhythm songname">曲名</th>
+<td class="list rhythm navi link rhythm-normall"><a class="rhythm" href="rhythm.html">譜面画像</a></td>
+<td class="list rhythm navi link rhythm-vertical"><a class="rhythm invalid" href="rhythm_raw.html">縦長画像</a></td>
+<td class="list rhythm navi link rhythm-transparent"><a class="rhythm" href="rhythm_transparent.html">透明背景</a></td>
+<td class="list rhythm navi rhythm-update" colspan="2">2024.03.05更新</td>
+<td class="list rhythm navi link rhythm-level" colspan="2"><a class="rhythm" href="rhythm_raw.html" onclick="return rhythm_display(true);">レベル表示</a></td>
+<td class="list rhythm navi link rhythm-notes" colspan="2"><a class="rhythm" href="rhythm_raw.html" onclick="return rhythm_display(false);">コンボ数表示</a></td>
+</tr>
+<tr>
+<th class="list rhythm songname" colspan="3">曲名</th>
 <th class="list rhythm time">時間</th>
 <th class="list rhythm easy">Easy</th>
 <th class="list rhythm normal">Normal</th>
@@ -33,320 +44,635 @@
 <th class="list rhythm expert">Expert</th>
 <th class="list rhythm master">Master</th>
 </tr>
-<tr>
-<td class="list rhythm songname">星の声</td>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_42.html">星の声</a></td>
 <td class="list rhythm time">2:36</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_1_r.png">242</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_2_r.png">337</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_3_r.png">528</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_4_r.png">595</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_5_r.png">836</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_1_r.png">242</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_2_r.png">337</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_3_r.png">528</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_4_r.png">595</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_5_r.png">836</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">星の声(Another&#160;ver.)</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_42.html">星の声</a></td>
 <td class="list rhythm time">2:36</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_1_r.png">205</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_2_r.png">283</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_3_r.png">412</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_4_r.png">636</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_5_r.png">797</a></td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_2_r.png">10</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_4_r.png">20</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/042_HnoKoe_5_r.png">24</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">Spread&#160;the&#160;Wings!!</td>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_106.html">星の声(Another&#160;ver.)</a></td>
+<td class="list rhythm time">2:36</td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_1_r.png">205</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_2_r.png">283</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_3_r.png">412</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_4_r.png">636</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_5_r.png">797</a></td>
+</tr>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_106.html">星の声(Another&#160;ver.)</a></td>
+<td class="list rhythm time">2:36</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_3_r.png">15</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/106_HnoUyn_5_r.png">25</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_5.html">Spread&#160;the&#160;Wings!!</a></td>
 <td class="list rhythm time">2:06</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/005_STWing_1_r.png">218</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/005_STWing_2_r.png">332</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/005_STWing_3_r.png">473</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/005_STWing_4_r.png">710</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/005_STWing_5_r.png">981</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/005_STWing_1_r.png">218</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/005_STWing_2_r.png">332</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/005_STWing_3_r.png">473</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/005_STWing_4_r.png">710</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/005_STWing_5_r.png">981</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ヒカリのdestination</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_5.html">Spread&#160;the&#160;Wings!!</a></td>
+<td class="list rhythm time">2:06</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/005_STWing_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/005_STWing_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/005_STWing_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/005_STWing_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/005_STWing_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_3.html">ヒカリのdestination</a></td>
 <td class="list rhythm time">2:05</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/003_Hikari_1_r.png">245</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/003_Hikari_2_r.png">380</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/003_Hikari_3_r.png">527</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/003_Hikari_4_r.png">725</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/003_Hikari_5_r.png">984</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/003_Hikari_1_r.png">245</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/003_Hikari_2_r.png">380</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/003_Hikari_3_r.png">527</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/003_Hikari_4_r.png">725</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/003_Hikari_5_r.png">984</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">バベルシティ・グレイス</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_3.html">ヒカリのdestination</a></td>
+<td class="list rhythm time">2:05</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/003_Hikari_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/003_Hikari_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/003_Hikari_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/003_Hikari_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/003_Hikari_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_4.html">バベルシティ・グレイス</a></td>
 <td class="list rhythm time">1:41</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/004_BabelC_1_r.png">182</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/004_BabelC_2_r.png">297</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/004_BabelC_3_r.png">425</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/004_BabelC_4_r.png">689</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/004_BabelC_5_r.png">896</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/004_BabelC_1_r.png">182</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/004_BabelC_2_r.png">297</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/004_BabelC_3_r.png">425</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/004_BabelC_4_r.png">689</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/004_BabelC_5_r.png">896</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">夢咲きAfter&#160;school</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_4.html">バベルシティ・グレイス</a></td>
+<td class="list rhythm time">1:41</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/004_BabelC_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/004_BabelC_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/004_BabelC_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/004_BabelC_4_r.png">25</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/004_BabelC_5_r.png">29</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_2.html">夢咲きAfter&#160;school</a></td>
 <td class="list rhythm time">1:47</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/002_YumeAS_1_r.png">269</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/002_YumeAS_2_r.png">346</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/002_YumeAS_3_r.png">433</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/002_YumeAS_4_r.png">574</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/002_YumeAS_5_r.png">775</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/002_YumeAS_1_r.png">269</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/002_YumeAS_2_r.png">346</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/002_YumeAS_3_r.png">433</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/002_YumeAS_4_r.png">574</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/002_YumeAS_5_r.png">775</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">アルストロメリア</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_2.html">夢咲きAfter&#160;school</a></td>
+<td class="list rhythm time">1:47</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/002_YumeAS_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/002_YumeAS_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/002_YumeAS_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/002_YumeAS_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/002_YumeAS_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_8.html">アルストロメリア</a></td>
 <td class="list rhythm time">2:02</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/008_Alstro_1_r.png">172</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/008_Alstro_2_r.png">247</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/008_Alstro_3_r.png">412</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/008_Alstro_4_r.png">516</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/008_Alstro_5_r.png">779</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/008_Alstro_1_r.png">172</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/008_Alstro_2_r.png">247</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/008_Alstro_3_r.png">412</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/008_Alstro_4_r.png">516</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/008_Alstro_5_r.png">779</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">Wandering&#160;Dream&#160;Chaser</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_8.html">アルストロメリア</a></td>
+<td class="list rhythm time">2:02</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/008_Alstro_1_r.png">6</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/008_Alstro_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/008_Alstro_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/008_Alstro_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/008_Alstro_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_9.html">Wandering&#160;Dream&#160;Chaser</a></td>
 <td class="list rhythm time">1:41</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/009_Wanddc_1_r.png">203</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/009_Wanddc_2_r.png">238</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/009_Wanddc_3_r.png">373</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/009_Wanddc_4_r.png">548</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/009_Wanddc_5_r.png">727</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/009_Wanddc_1_r.png">203</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/009_Wanddc_2_r.png">238</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/009_Wanddc_3_r.png">373</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/009_Wanddc_4_r.png">548</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/009_Wanddc_5_r.png">727</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">いつだって僕らは</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_9.html">Wandering&#160;Dream&#160;Chaser</a></td>
+<td class="list rhythm time">1:41</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/009_Wanddc_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/009_Wanddc_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/009_Wanddc_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/009_Wanddc_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/009_Wanddc_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_7.html">いつだって僕らは</a></td>
 <td class="list rhythm time">1:55</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/007_ItuBok_1_r.png">267</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/007_ItuBok_2_r.png">321</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/007_ItuBok_3_r.png">445</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/007_ItuBok_4_r.png">712</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/007_ItuBok_5_r.png">961</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/007_ItuBok_1_r.png">267</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/007_ItuBok_2_r.png">321</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/007_ItuBok_3_r.png">445</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/007_ItuBok_4_r.png">712</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/007_ItuBok_5_r.png">961</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">OH&#160;MY&#160;GOD</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_7.html">いつだって僕らは</a></td>
+<td class="list rhythm time">1:55</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/007_ItuBok_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/007_ItuBok_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/007_ItuBok_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/007_ItuBok_4_r.png">23</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/007_ItuBok_5_r.png">28</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_10.html">OH&#160;MY&#160;GOD</a></td>
 <td class="list rhythm time">1:51</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/010_Omygod_1_r.png">154</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/010_Omygod_2_r.png">236</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/010_Omygod_3_r.png">432</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/010_Omygod_4_r.png">620</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/010_Omygod_5_r.png">648</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/010_Omygod_1_r.png">154</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/010_Omygod_2_r.png">236</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/010_Omygod_3_r.png">432</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/010_Omygod_4_r.png">620</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/010_Omygod_5_r.png">648</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">無自覚アプリオリ</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_10.html">OH&#160;MY&#160;GOD</a></td>
+<td class="list rhythm time">1:51</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/010_Omygod_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/010_Omygod_2_r.png">10</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/010_Omygod_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/010_Omygod_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/010_Omygod_5_r.png">28</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_40.html">無自覚アプリオリ</a></td>
 <td class="list rhythm time">2:04</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/040_Aprior_1_r.png">354</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/040_Aprior_2_r.png">450</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/040_Aprior_3_r.png">596</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/040_Aprior_4_r.png">796</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/040_Aprior_5_r.png">1208</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/040_Aprior_1_r.png">354</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/040_Aprior_2_r.png">450</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/040_Aprior_3_r.png">596</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/040_Aprior_4_r.png">796</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/040_Aprior_5_r.png">1208</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">裸足じゃイラレナイ</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_40.html">無自覚アプリオリ</a></td>
+<td class="list rhythm time">2:04</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/040_Aprior_1_r.png">9</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/040_Aprior_2_r.png">15</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/040_Aprior_3_r.png">19</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/040_Aprior_4_r.png">26</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/040_Aprior_5_r.png">30</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_96.html">裸足じゃイラレナイ</a></td>
 <td class="list rhythm time">1:58</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/096_Hadasi_1_r.png">194</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/096_Hadasi_2_r.png">305</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/096_Hadasi_3_r.png">506</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/096_Hadasi_4_r.png">803</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/096_Hadasi_5_r.png">893</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/096_Hadasi_1_r.png">194</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/096_Hadasi_2_r.png">305</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/096_Hadasi_3_r.png">506</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/096_Hadasi_4_r.png">803</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/096_Hadasi_5_r.png">893</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ツバサグラビティ</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_96.html">裸足じゃイラレナイ</a></td>
+<td class="list rhythm time">1:58</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/096_Hadasi_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/096_Hadasi_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/096_Hadasi_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/096_Hadasi_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/096_Hadasi_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_20.html">ツバサグラビティ</a></td>
 <td class="list rhythm time">2:06</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/020_Tubasa_1_r.png">253</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/020_Tubasa_2_r.png">350</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/020_Tubasa_3_r.png">500</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/020_Tubasa_4_r.png">682</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/020_Tubasa_5_r.png">934</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/020_Tubasa_1_r.png">253</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/020_Tubasa_2_r.png">350</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/020_Tubasa_3_r.png">500</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/020_Tubasa_4_r.png">682</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/020_Tubasa_5_r.png">934</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">We&#160;can&#160;go&#160;now!</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_20.html">ツバサグラビティ</a></td>
+<td class="list rhythm time">2:06</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/020_Tubasa_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/020_Tubasa_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/020_Tubasa_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/020_Tubasa_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/020_Tubasa_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_11.html">We&#160;can&#160;go&#160;now!</a></td>
 <td class="list rhythm time">2:16</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/011_Wcango_1_r.png">250</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/011_Wcango_2_r.png">351</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/011_Wcango_3_r.png">578</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/011_Wcango_4_r.png">770</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/011_Wcango_5_r.png">993</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/011_Wcango_1_r.png">250</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/011_Wcango_2_r.png">351</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/011_Wcango_3_r.png">578</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/011_Wcango_4_r.png">770</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/011_Wcango_5_r.png">993</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ビーチブレイバー</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_11.html">We&#160;can&#160;go&#160;now!</a></td>
+<td class="list rhythm time">2:16</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/011_Wcango_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/011_Wcango_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/011_Wcango_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/011_Wcango_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/011_Wcango_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_14.html">ビーチブレイバー</a></td>
 <td class="list rhythm time">1:43</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/014_BeachB_1_r.png">172</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/014_BeachB_2_r.png">215</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/014_BeachB_3_r.png">361</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/014_BeachB_4_r.png">538</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/014_BeachB_5_r.png">888</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/014_BeachB_1_r.png">172</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/014_BeachB_2_r.png">215</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/014_BeachB_3_r.png">361</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/014_BeachB_4_r.png">538</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/014_BeachB_5_r.png">888</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ツバサグラビティ(アニメOP&#160;ver.)</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_14.html">ビーチブレイバー</a></td>
+<td class="list rhythm time">1:43</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/014_BeachB_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/014_BeachB_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/014_BeachB_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/014_BeachB_4_r.png">24</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/014_BeachB_5_r.png">29</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_117.html">ツバサグラビティ(アニメOP&#160;ver.)</a></td>
 <td class="list rhythm time">1:29</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/117_TubAni_1_r.png">186</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/117_TubAni_2_r.png">283</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/117_TubAni_3_r.png">353</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/117_TubAni_4_r.png">552</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/117_TubAni_5_r.png">683</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/117_TubAni_1_r.png">186</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/117_TubAni_2_r.png">283</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/117_TubAni_3_r.png">353</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/117_TubAni_4_r.png">552</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/117_TubAni_5_r.png">683</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">Bloomy!</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_117.html">ツバサグラビティ(アニメOP&#160;ver.)</a></td>
+<td class="list rhythm time">1:29</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/117_TubAni_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/117_TubAni_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/117_TubAni_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/117_TubAni_4_r.png">23</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/117_TubAni_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_15.html">Bloomy!</a></td>
 <td class="list rhythm time">2:09</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/015_Bloomy_1_r.png">212</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/015_Bloomy_2_r.png">288</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/015_Bloomy_3_r.png">487</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/015_Bloomy_4_r.png">581</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/015_Bloomy_5_r.png">694</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/015_Bloomy_1_r.png">212</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/015_Bloomy_2_r.png">288</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/015_Bloomy_3_r.png">487</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/015_Bloomy_4_r.png">581</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/015_Bloomy_5_r.png">694</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">明日もBeautiful&#160;Day</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_15.html">Bloomy!</a></td>
+<td class="list rhythm time">2:09</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/015_Bloomy_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/015_Bloomy_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/015_Bloomy_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/015_Bloomy_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/015_Bloomy_5_r.png">25</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_97.html">明日もBeautiful&#160;Day</a></td>
 <td class="list rhythm time">1:52</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/097_Beauti_1_r.png">174</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/097_Beauti_2_r.png">213</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/097_Beauti_3_r.png">335</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/097_Beauti_4_r.png">489</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/097_Beauti_5_r.png">713</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/097_Beauti_1_r.png">174</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/097_Beauti_2_r.png">213</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/097_Beauti_3_r.png">335</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/097_Beauti_4_r.png">489</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/097_Beauti_5_r.png">713</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">NEO&#160;THEORY&#160;FANTASY</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_97.html">明日もBeautiful&#160;Day</a></td>
+<td class="list rhythm time">1:52</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/097_Beauti_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/097_Beauti_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/097_Beauti_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/097_Beauti_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/097_Beauti_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_12.html">NEO&#160;THEORY&#160;FANTASY</a></td>
 <td class="list rhythm time">2:04</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_1_r.png">216</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_2_r.png">335</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_3_r.png">490</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_4_r.png">762</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_5_r.png">1047</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_1_r.png">216</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_2_r.png">335</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_3_r.png">490</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_4_r.png">762</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_5_r.png">1047</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">青空</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_12.html">NEO&#160;THEORY&#160;FANTASY</a></td>
+<td class="list rhythm time">2:04</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_4_r.png">24</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/012_NeoTeF_5_r.png">28</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_100.html">青空</a></td>
 <td class="list rhythm time">1:58</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_1_r.png">262</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_2_r.png">228</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_3_r.png">435</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_4_r.png">541</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_5_r.png">691</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_1_r.png">262</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_2_r.png">228</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_3_r.png">435</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_4_r.png">541</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_5_r.png">691</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">Multicolored&#160;Sky</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_100.html">青空</a></td>
+<td class="list rhythm time">1:58</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/100_NoctAZ_5_r.png">25</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_6.html">Multicolored&#160;Sky</a></td>
 <td class="list rhythm time">1:59</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/006_MultiS_1_r.png">178</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/006_MultiS_2_r.png">290</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/006_MultiS_3_r.png">379</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/006_MultiS_4_r.png">536</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/006_MultiS_5_r.png">667</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/006_MultiS_1_r.png">178</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/006_MultiS_2_r.png">290</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/006_MultiS_3_r.png">379</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/006_MultiS_4_r.png">536</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/006_MultiS_5_r.png">667</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ハナムケのハナタバ</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_6.html">Multicolored&#160;Sky</a></td>
+<td class="list rhythm time">1:59</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/006_MultiS_1_r.png">6</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/006_MultiS_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/006_MultiS_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/006_MultiS_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/006_MultiS_5_r.png">24</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_101.html">ハナムケのハナタバ</a></td>
 <td class="list rhythm time">2:34</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/101_HanaMK_1_r.png">258</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/101_HanaMK_2_r.png">385</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/101_HanaMK_3_r.png">526</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/101_HanaMK_4_r.png">783</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/101_HanaMK_5_r.png">1197</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/101_HanaMK_1_r.png">258</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/101_HanaMK_2_r.png">385</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/101_HanaMK_3_r.png">526</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/101_HanaMK_4_r.png">783</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/101_HanaMK_5_r.png">1197</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">夢見鳥</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_101.html">ハナムケのハナタバ</a></td>
+<td class="list rhythm time">2:34</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/101_HanaMK_1_r.png">6</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/101_HanaMK_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/101_HanaMK_3_r.png">19</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/101_HanaMK_4_r.png">24</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/101_HanaMK_5_r.png">28</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_29.html">夢見鳥</a></td>
 <td class="list rhythm time">2:05</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/029_Yumemi_1_r.png">186</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/029_Yumemi_2_r.png">262</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/029_Yumemi_3_r.png">473</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/029_Yumemi_4_r.png">575</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/029_Yumemi_5_r.png">820</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/029_Yumemi_1_r.png">186</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/029_Yumemi_2_r.png">262</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/029_Yumemi_3_r.png">473</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/029_Yumemi_4_r.png">575</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/029_Yumemi_5_r.png">820</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">チョコデート・サンデー</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_29.html">夢見鳥</a></td>
+<td class="list rhythm time">2:05</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/029_Yumemi_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/029_Yumemi_2_r.png">10</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/029_Yumemi_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/029_Yumemi_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/029_Yumemi_5_r.png">24</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_35.html">チョコデート・サンデー</a></td>
 <td class="list rhythm time">1:58</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/035_ChocoD_1_r.png">293</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/035_ChocoD_2_r.png">332</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/035_ChocoD_3_r.png">441</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/035_ChocoD_4_r.png">645</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/035_ChocoD_5_r.png">854</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/035_ChocoD_1_r.png">293</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/035_ChocoD_2_r.png">332</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/035_ChocoD_3_r.png">441</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/035_ChocoD_4_r.png">645</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/035_ChocoD_5_r.png">854</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ありったけの輝きで</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_35.html">チョコデート・サンデー</a></td>
+<td class="list rhythm time">1:58</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/035_ChocoD_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/035_ChocoD_2_r.png">14</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/035_ChocoD_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/035_ChocoD_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/035_ChocoD_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_24.html">ありったけの輝きで</a></td>
 <td class="list rhythm time">1:52</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/024_Aritta_1_r.png">240</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/024_Aritta_2_r.png">322</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/024_Aritta_3_r.png">433</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/024_Aritta_4_r.png">601</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/024_Aritta_5_r.png">812</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/024_Aritta_1_r.png">240</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/024_Aritta_2_r.png">322</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/024_Aritta_3_r.png">433</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/024_Aritta_4_r.png">601</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/024_Aritta_5_r.png">812</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">アポイント・シグナル</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_24.html">ありったけの輝きで</a></td>
+<td class="list rhythm time">1:52</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/024_Aritta_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/024_Aritta_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/024_Aritta_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/024_Aritta_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/024_Aritta_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_46.html">アポイント・シグナル</a></td>
 <td class="list rhythm time">1:41</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/046_AppoSG_1_r.png">177</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/046_AppoSG_2_r.png">222</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/046_AppoSG_3_r.png">366</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/046_AppoSG_4_r.png">460</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/046_AppoSG_5_r.png">596</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/046_AppoSG_1_r.png">177</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/046_AppoSG_2_r.png">222</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/046_AppoSG_3_r.png">366</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/046_AppoSG_4_r.png">460</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/046_AppoSG_5_r.png">596</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">ハナマルバッジ</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_46.html">アポイント・シグナル</a></td>
+<td class="list rhythm time">1:41</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/046_AppoSG_1_r.png">6</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/046_AppoSG_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/046_AppoSG_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/046_AppoSG_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/046_AppoSG_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_45.html">ハナマルバッジ</a></td>
 <td class="list rhythm time">1:42</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/045_HanaBD_1_r.png">194</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/045_HanaBD_2_r.png">272</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/045_HanaBD_3_r.png">384</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/045_HanaBD_4_r.png">478</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/045_HanaBD_5_r.png">723</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/045_HanaBD_1_r.png">194</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/045_HanaBD_2_r.png">272</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/045_HanaBD_3_r.png">384</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/045_HanaBD_4_r.png">478</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/045_HanaBD_5_r.png">723</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">常咲の庭</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_45.html">ハナマルバッジ</a></td>
+<td class="list rhythm time">1:42</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/045_HanaBD_1_r.png">7</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/045_HanaBD_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/045_HanaBD_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/045_HanaBD_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/045_HanaBD_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_21.html">常咲の庭</a></td>
 <td class="list rhythm time">1:59</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/021_TokosN_1_r.png">168</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/021_TokosN_2_r.png">181</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/021_TokosN_3_r.png">319</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/021_TokosN_4_r.png">566</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/021_TokosN_5_r.png">759</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/021_TokosN_1_r.png">168</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/021_TokosN_2_r.png">181</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/021_TokosN_3_r.png">319</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/021_TokosN_4_r.png">566</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/021_TokosN_5_r.png">759</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">Sweet&#160;Memories</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_21.html">常咲の庭</a></td>
+<td class="list rhythm time">1:59</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/021_TokosN_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/021_TokosN_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/021_TokosN_3_r.png">15</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/021_TokosN_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/021_TokosN_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_44.html">Sweet&#160;Memories</a></td>
 <td class="list rhythm time">2:07</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/044_SweetM_1_r.png">228</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/044_SweetM_2_r.png">276</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/044_SweetM_3_r.png">408</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/044_SweetM_4_r.png">532</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/044_SweetM_5_r.png">723</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/044_SweetM_1_r.png">228</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/044_SweetM_2_r.png">276</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/044_SweetM_3_r.png">408</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/044_SweetM_4_r.png">532</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/044_SweetM_5_r.png">723</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">星をめざして</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_44.html">Sweet&#160;Memories</a></td>
+<td class="list rhythm time">2:07</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/044_SweetM_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/044_SweetM_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/044_SweetM_3_r.png">15</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/044_SweetM_4_r.png">20</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/044_SweetM_5_r.png">24</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_38.html">星をめざして</a></td>
 <td class="list rhythm time">1:46</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/038_HoshiM_1_r.png">159</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/038_HoshiM_2_r.png">224</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/038_HoshiM_3_r.png">374</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/038_HoshiM_4_r.png">544</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/038_HoshiM_5_r.png">687</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/038_HoshiM_1_r.png">159</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/038_HoshiM_2_r.png">224</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/038_HoshiM_3_r.png">374</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/038_HoshiM_4_r.png">544</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/038_HoshiM_5_r.png">687</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">SOS</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_38.html">星をめざして</a></td>
+<td class="list rhythm time">1:46</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/038_HoshiM_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/038_HoshiM_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/038_HoshiM_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/038_HoshiM_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/038_HoshiM_5_r.png">26</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_19.html">SOS</a></td>
 <td class="list rhythm time">2:04</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/019_FuySOS_1_r.png">149</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/019_FuySOS_2_r.png">217</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/019_FuySOS_3_r.png">440</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/019_FuySOS_4_r.png">613</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/019_FuySOS_5_r.png">886</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/019_FuySOS_1_r.png">149</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/019_FuySOS_2_r.png">217</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/019_FuySOS_3_r.png">440</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/019_FuySOS_4_r.png">613</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/019_FuySOS_5_r.png">886</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">statice</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_19.html">SOS</a></td>
+<td class="list rhythm time">2:04</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/019_FuySOS_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/019_FuySOS_2_r.png">12</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/019_FuySOS_3_r.png">17</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/019_FuySOS_4_r.png">22</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/019_FuySOS_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_47.html">statice</a></td>
 <td class="list rhythm time">2:08</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/047_Static_1_r.png">302</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/047_Static_2_r.png">423</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/047_Static_3_r.png">535</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/047_Static_4_r.png">657</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/047_Static_5_r.png">825</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/047_Static_1_r.png">302</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/047_Static_2_r.png">423</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/047_Static_3_r.png">535</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/047_Static_4_r.png">657</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/047_Static_5_r.png">825</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">フェアリー・ガール</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_47.html">statice</a></td>
+<td class="list rhythm time">2:08</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/047_Static_1_r.png">5</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/047_Static_2_r.png">11</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/047_Static_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/047_Static_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/047_Static_5_r.png">25</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_102.html">フェアリー・ガール</a></td>
 <td class="list rhythm time">2:03</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/102_FairyG_1_r.png">293</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/102_FairyG_2_r.png">409</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/102_FairyG_3_r.png">617</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/102_FairyG_4_r.png">782</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/102_FairyG_5_r.png">971</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/102_FairyG_1_r.png">293</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/102_FairyG_2_r.png">409</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/102_FairyG_3_r.png">617</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/102_FairyG_4_r.png">782</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/102_FairyG_5_r.png">971</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">神様は死んだ、って</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_102.html">フェアリー・ガール</a></td>
+<td class="list rhythm time">2:03</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/102_FairyG_1_r.png">9</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/102_FairyG_2_r.png">14</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/102_FairyG_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/102_FairyG_4_r.png">23</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/102_FairyG_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_48.html">神様は死んだ、って</a></td>
 <td class="list rhythm time">2:09</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/048_Kamism_1_r.png">167</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/048_Kamism_2_r.png">301</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/048_Kamism_3_r.png">512</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/048_Kamism_4_r.png">635</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/048_Kamism_5_r.png">803</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/048_Kamism_1_r.png">167</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/048_Kamism_2_r.png">301</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/048_Kamism_3_r.png">512</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/048_Kamism_4_r.png">635</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/048_Kamism_5_r.png">803</a></td>
 </tr>
-<tr>
-<td class="list rhythm songname">Happier</td>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_48.html">神様は死んだ、って</a></td>
+<td class="list rhythm time">2:09</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/048_Kamism_1_r.png">6</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/048_Kamism_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/048_Kamism_3_r.png">18</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/048_Kamism_4_r.png">23</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/048_Kamism_5_r.png">27</a></td>
+</tr>
+<tr class="list rhythm notes">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_104.html">Happier</a></td>
 <td class="list rhythm time">1:49</td>
-<td class="list rhythm easy"><a class="rhythm" href="images/rhythm_r/104_Happie_1_r.png">208</a></td>
-<td class="list rhythm normal"><a class="rhythm" href="images/rhythm_r/104_Happie_2_r.png">264</a></td>
-<td class="list rhythm hard"><a class="rhythm" href="images/rhythm_r/104_Happie_3_r.png">401</a></td>
-<td class="list rhythm expert"><a class="rhythm" href="images/rhythm_r/104_Happie_4_r.png">583</a></td>
-<td class="list rhythm master"><a class="rhythm" href="images/rhythm_r/104_Happie_5_r.png">758</a></td>
+<td class="list rhythm notes easy"><a class="rhythm" href="images/rhythm_r/104_Happie_1_r.png">208</a></td>
+<td class="list rhythm notes normal"><a class="rhythm" href="images/rhythm_r/104_Happie_2_r.png">264</a></td>
+<td class="list rhythm notes hard"><a class="rhythm" href="images/rhythm_r/104_Happie_3_r.png">401</a></td>
+<td class="list rhythm notes expert"><a class="rhythm" href="images/rhythm_r/104_Happie_4_r.png">583</a></td>
+<td class="list rhythm notes master"><a class="rhythm" href="images/rhythm_r/104_Happie_5_r.png">758</a></td>
+</tr>
+<tr class="list rhythm level invisible-row">
+<td class="list rhythm songname" colspan="3"><a class="song link" href="songs/song_104.html">Happier</a></td>
+<td class="list rhythm time">1:49</td>
+<td class="list rhythm level easy"><a class="rhythm" href="images/rhythm_r/104_Happie_1_r.png">8</a></td>
+<td class="list rhythm level normal"><a class="rhythm" href="images/rhythm_r/104_Happie_2_r.png">13</a></td>
+<td class="list rhythm level hard"><a class="rhythm" href="images/rhythm_r/104_Happie_3_r.png">16</a></td>
+<td class="list rhythm level expert"><a class="rhythm" href="images/rhythm_r/104_Happie_4_r.png">21</a></td>
+<td class="list rhythm level master"><a class="rhythm" href="images/rhythm_r/104_Happie_5_r.png">26</a></td>
 </tr>
 </table>
 <table class="footer">
