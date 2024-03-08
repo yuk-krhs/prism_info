@@ -510,7 +510,6 @@ span.live.livespac.live-2d		{ background: #fee; }
 a.invalid:hover 				{ background-color: #fff; }
 td.invalid:hover 				{ background-color: fff; }
 span.invalid:hover 				{ background-color: fff; }
-td.removed-cell					{ display: none; }
 
 /* ストーリー */
 table.list.story				{ font-size: 15px; }
@@ -571,3 +570,5 @@ th.list.story.capter.idol-25	{ background-color: var(--idol-25); color: white; }
 th.list.story.capter.idol-26	{ background-color: var(--idol-26); color: white; }
 th.list.story.capter.idol-27	{ background-color: var(--idol-27); }
 th.list.story.capter.idol-28	{ background-color: var(--idol-28); }
+
+td.removed-cell					{ display: none; }
