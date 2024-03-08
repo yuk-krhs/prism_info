@@ -1,4 +1,13 @@
 :root {
+	--color:			black;
+/*	--bg-color:			#f4f8ff;	*/
+	--bg-color:			white;
+	--hover-color:		#fee;
+	--link-color:		#00e;
+	--visited-color:	purple;
+	--border-color:		#444;
+	--th-bg:			#ddd;
+
 	--vo-bg: #ffbbbb;
 	--da-bg: #bbddff;
 	--vi-bg: #ffffaa;
@@ -20,11 +29,94 @@
 	--ha-bg2: #fff2dd;
 	--ex-bg2: #ffe1e1;
 	--ma-bg2: #ffddff;
+
+    --unit-1: #fff68d;
+    --unit-2: #853998;
+    --unit-3: #fa8333;
+    --unit-4: #ff699e;
+    --unit-5: #af011c;
+    --unit-6: #384D98;
+    --unit-7: #008e74;
+    --unit-8: #0C0C0C;
+
+    --idol-1: #FFBAD6;
+    --idol-2: #144384;
+    --idol-3: #FFE012;
+    --idol-4: #F84CAD;
+    --idol-5: #A846FB;
+    --idol-6: #006047;
+    --idol-7: #3B91C4;
+    --idol-8: #D9F2FF;
+    --idol-9: #E5461C;
+    --idol-10: #F93B90;
+    --idol-11: #FFC602;
+    --idol-12: #89C3EB;
+    --idol-13: #90E667;
+    --idol-14: #F54275;
+    --idol-15: #E75BEC;
+    --idol-16: #B4B4B0;
+    --idol-17: #F30100;
+    --idol-18: #5AFF19;
+    --idol-19: #FF00FF;
+    --idol-20: #50D0D0;
+    --idol-21: #BE1E3E;
+    --idol-22: #7967C3;
+    --idol-23: #FFC639;
+    --idol-24: #A6CDB6;
+    --idol-25: #760F10;
+    --idol-26: #24130D;
+    --idol-27: #E0B5D3;
+    --idol-28: #EAD7A4;
+    --idol-90: #C3D825;
+    --idol-91: #000000;
+    --idol-93: #000000;
 }
 
-body {
-	font-size: 16px;
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+	--color:			white;
+	--bg-color:			black;
+	--hover-color:		#422;
+	--link-color:		#88f;
+	--visited-color:	#e8e;
+	--border-color:		#aaa;
+	--th-bg:			#444;
+
+	--vo-bg: #442222;
+	--da-bg: #222244;
+	--vi-bg: #444422;
+	--me-bg: #224422;
+
+	--vo-bg2: #ffeeee;
+	--da-bg2: #eeeeff;
+	--vi-bg2: #ffffee;
+	--me-bg2: #eeffee;
+
+	--ea-bg: #bbccff;
+	--no-bg: #bbffbb;
+	--ha-bg: #ffddaa;
+	--ex-bg: #ffbbbb;
+	--ma-bg: #ddaadd;
+
+	--ea-bg2: #eef4ff;
+	--no-bg2: #eeffee;
+	--ha-bg2: #fff2dd;
+	--ex-bg2: #ffe1e1;
+	--ma-bg2: #ffddff;
+  }
 }
+*/
+
+/* 基本設定 */
+body {
+	font-size:			16px;
+	color:				var(--color);
+	background-color:	var(--bg-color);
+}
+
+a							{ color: var(--link-color); }
+a:visited					{ color: var(--visited-color); }
 
 table {
 	border-collapse: collapse;
@@ -34,27 +126,27 @@ table {
 }
 
 td {
-	border: 1pt solid black;
+	border: 1pt solid var(--border-color);
 }
 
 th {
-	border: 1pt solid black;
+	border: 1pt solid var(--border-color);
+	background-color: var(--th-bg);
 }
 
 p {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-	margin-top: 0pt;
-	margin-bottom: 0pt;
+	margin-left:		0.5em;
+	margin-right:		0.5em;
+	margin-top:			0pt;
+	margin-bottom:		0pt;
 }
 
-tr.invisible-row {
-	display: none;
-}
+tr.invisible-row		{ display: none;	}
+
+span.comment			{ font-size: 14px; }
 
 /* Pアイドル */
 table.list.pidol 				{ width: 1000px; }
-th.list							{ background-color: #eee; }
 th.status.vo					{ background-color: var(--vo-bg); }
 th.status.da					{ background-color: var(--da-bg); }
 th.status.vi					{ background-color: var(--vi-bg); }
@@ -79,7 +171,6 @@ td.list.impl					{ text-align: center; }
 td.list.status					{ text-align: center; }
 
 table.details.pidol 			{ width: 512px; }
-th.details						{ background-color: #eee; }
 th.details.start				{ width: 16%; }
 th.details.vo					{ width: 14%; }
 th.details.da					{ width: 14%; }
@@ -106,8 +197,8 @@ td.head.title.link-1			{ width: 80%; border-style: none; }
 span.head.page-title			{ font-size: 14pt; font-weight: bold; color: #55C}
 td.head.link					{ width: 20%; text-align: center; }
 td.head.link:hover 				{ width: 20%; text-align: center; }
-td.head.link					{ background-color: #fff; }
-td.head.link:hover 				{ background-color: #fee; }
+td.head.link					{ background-color: var(--bg-color); }
+td.head.link:hover 				{ background-color: var(--hover-color); }
 a.head.link	 					{ display: block; }
 
 span.head.game-title
@@ -115,9 +206,17 @@ span.head.game-title
 	font-size:			18pt;
 	font-weight:		bold;
 	background:			linear-gradient(90deg, #99f, #f99);
-	color:				black;
+	color:				var(--color);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+td.head.category.link {
+	width: 20%;
+}
+
+a.head.link.category {
+	padding: 5px;
 }
 
 /* フッタ */
@@ -194,60 +293,57 @@ span.update.label {
 }
 
 /* リンク無効化 */
+/*
 a.update
 {
 	pointer-events:		none;
 	text-decoration:	none;
-	color:				black;
+	color:				var(--color);
 }
+*/
 
 a.invalid
 {
 	pointer-events:		none;
 	text-decoration:	none;
-	color:				black;
+	color:				var(--color);
 }
 
 /* 譜面 */
 table.list.rhythm 		{ width: 780px; }
+table.list.rhythm.navi 	{ width: 780px; margin-top: 1em; }
 
 th.list.rhythm			{ background-color: #eee; }
 
 th.list.rhythm			{
 	position:			sticky;
-	top:				27px;
-	z-index:			1;
-/*	border-top:			1pt solid black;
-	border-bottom:		1pt solid black;	*/
-}
-
-td.list.rhythm.navi		{
-	position:			sticky;
 	top:				-1px;
-	z-index:			2;
-	background:			#fff;
-/*	border-top:			1pt solid black;
-	border-bottom:		1pt solid black;	*/
+/*	top:				27px;	*/
+	z-index:			1;
 }
 
-th.list.rhythm.songname			{ width: 40%; }
-th.list.rhythm.time				{ width: 10%; }
-th.list.rhythm.easy				{ width: 10%; background-color: var(--ea-bg) }
-th.list.rhythm.normal			{ width: 10%; background-color: var(--no-bg) }
-th.list.rhythm.hard				{ width: 10%; background-color: var(--ha-bg) }
-th.list.rhythm.expert			{ width: 10%; background-color: var(--ex-bg) }
-th.list.rhythm.master			{ width: 10%; background-color: var(--ma-bg) }
+th.list.rhythm.songname			{ width: 34%; }
+th.list.rhythm.unitname			{ width: 14%; }
+th.list.rhythm.time				{ width: 8%; }
+th.list.rhythm.easy				{ width: 8%; background-color: var(--ea-bg); }
+th.list.rhythm.normal			{ width: 8%; background-color: var(--no-bg); }
+th.list.rhythm.hard				{ width: 8%; background-color: var(--ha-bg); }
+th.list.rhythm.expert			{ width: 8%; background-color: var(--ex-bg); }
+th.list.rhythm.master			{ width: 8%; background-color: var(--ma-bg); }
+th.list.rhythm					{ font-size: 15px; }
 
 td.list.rhythm.songname			{ padding-top: 0.3em; padding-bottom: 0.3em; }
 td.list.rhythm.songname			{ text-align: center; }
+td.list.rhythm.unitname			{ text-align: center; }
 td.list.rhythm.time				{ text-align: center; }
 td.list.rhythm.easy				{ text-align: center; background-color: var(--ea-bg2); }
 td.list.rhythm.normal			{ text-align: center; background-color: var(--no-bg2); }
 td.list.rhythm.hard				{ text-align: center; background-color: var(--ha-bg2); }
 td.list.rhythm.expert			{ text-align: center; background-color: var(--ex-bg2); }
 td.list.rhythm.master			{ text-align: center; background-color: var(--ma-bg2); }
-td.list.rhythm					{ font-size: 18px; }
+td.list.rhythm					{ font-size: 16px; }
 td.list.rhythm.songname			{ font-size: 16px; }
+td.list.rhythm.unitname			{ font-size: 16px; }
 
 td.list.rhythm.easy:hover 		{ background-color: #fff; }
 td.list.rhythm.normal:hover 	{ background-color: #fff; }
@@ -267,6 +363,9 @@ a.rhythm	 					{ display: block; }
 a.song	 						{ display: block; }
 
 /* 曲 */
+span.head.page-title.songname	{ font-size: 20px; font-weight: bold; color: #000; }
+span.head.page-title			{ white-space: nowrap; }
+
 table.details.song 				{ width: 780px; }
 table.details.song 				{ margin-top: 1em; }
 th.details.song 				{ width: 16.6%; }
@@ -274,7 +373,6 @@ th.details.song.update 			{ background: #eee; }
 th.details.song.difficulty 		{ width: 16.6%; }
 th.details.song.difficulty		{ text-align: center; }
 td.details.song.level			{ text-align: center; }
-td.details.song.notes			{ text-align: center; }
 td.details.song.notes			{ text-align: center; }
 td.details.song 				{ padding-left: 5px; padding-right: 5px; }
 
@@ -290,7 +388,12 @@ td.details.song.hard			{ text-align: center; background-color: var(--ha-bg2); }
 td.details.song.expert			{ text-align: center; background-color: var(--ex-bg2); }
 td.details.song.master			{ text-align: center; background-color: var(--ma-bg2); }
 
-span.head.page-title.songname	{ font-size: 20px; font-weight: bold; color: #000; }
+td.details.rhythm-image:hover 	{ background-color: #fff; }
+td.details.rhythm-image 		{ padding-top: 0.5em; padding-bottom: 0.5em; }
+td.list.rhythm.navi.rhythm-update { width: 25%; }
+td.list.rhythm.navi.rhythm-level { width: 20%; }
+td.list.rhythm.navi.rhythm-notes { width: 20%; }
+a.details.rhythm-image:hover 	{ display: block; }
 
 span.details.song.score
 {
@@ -298,3 +401,173 @@ span.details.song.score
 	width: 5em;
 	text-align: right;
 }
+
+/* アイドル一覧 */
+table.list.idol					{ width: 780px; }
+table.list.idol					{ margin-top: 1em; }
+th.list.idol					{ text-align: center; }
+th.list.idol.unitname			{ width: 17%; }
+th.list.idol.idolname			{ width: 17%; }	/* 34 */
+th.list.idol.birthplace			{ width: 12%; }	/* 46 */
+th.list.idol.age				{ width: 8%; }  /* 54 */
+th.list.idol.birthday			{ width: 13%; }	/* 66 */
+th.list.idol.height				{ width: 10%; }	/* 76 */
+th.list.idol.weight				{ width: 8%; }	/* 85 */
+th.list.idol.bust				{ width: 5%; }
+th.list.idol.waist				{ width: 5%; }
+th.list.idol.hip				{ width: 5%; }	/* 100 */
+td.list.idol					{ text-align: center; }
+
+div.list.idol.idolname {
+	display: flex;
+/*	justify-content: space-between;
+	width: 200px;*/
+}
+
+span.list.idol.color {
+}
+
+span.list.idol.idolname {
+	text-align: center;
+	flex-grow: 1;
+}
+
+a.idol	 						{ display: block; }
+/*td.list.idol.unitname:hover 	{ background-color: #fee; }*/
+td.list.idol.idolname:hover 	{ background-color: #fee; }
+
+/* アイドル */
+span.head.page-title.idolname	{ font-size: 20px; font-weight: bold; color: #000; }
+
+table.details.idol				{ width: 780px; table-layout: fixed; }
+table.details.idol				{ margin-top: 1em; }
+th.details.idol					{ width: 14.28%; }
+th.details.idol.color			{ width: 14.28%; }
+th.details.idol.idolname		{ width: 28.56%; }
+th.details.idol.phonetics		{ width: 28.56%; }
+th.details.idol.cv				{ width: 28.56%; }
+td.details.idol					{ text-align: center; }
+td.details.idol.hobby			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+td.details.idol.ability			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+td.details.idol.desc			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+
+span.star.solid					{ color: #f66; margin: 0px; padding: 0px; letter-spacing: -3px; }
+span.star.empty					{ color: #aaa; margin: 0px; padding: 0px; letter-spacing: -3px; }
+
+h4.list							{ margin-top: 0.5em; margin-bottom: 0px; }
+
+table.list.idol.produce			{ margin-top: 0em; }
+th.list.pidol.star				{ width: 9%; }
+th.list.pidol.cardname			{ width: 42%; }
+th.list.pidol.implement			{ width: 14%; }
+th.list.pidol.obtain			{ width: 35%; }
+td.list.pidol.implement			{ text-align: center; }
+
+table.list.idol.support			{ margin-top: 0em; }
+th.list.support.rarity			{ width: 9%; }
+th.list.support.cardname		{ width: 42%; }
+th.list.support.implement		{ width: 14%; }
+th.list.support.obtain			{ width: 35%; }
+td.list.support.rarity			{ text-align: center; }
+td.list.support.implement		{ text-align: center; }
+
+table.list.idol.costume			{ margin-top: 0em; }
+th.list.costume.kind			{ width: 6%; }
+th.list.costume.costumename		{ width: 35%; }
+th.list.costume.implement		{ width: 10%; }
+th.list.costume.obtain			{ width: 49%; }
+td.list.costume.kind			{ text-align: center; }
+td.list.costume.implement		{ text-align: center; }
+td.list.hairstyle.kind			{ text-align: center; }
+td.list.hairstyle.implement		{ text-align: center; }
+td.list.accessory.kind			{ text-align: center; }
+td.list.accessory.implement		{ text-align: center; }
+td.list.cloth					{ font-size: 12px; }
+
+td.details.idol.color.dark-text		{ color: #000; }
+td.details.idol.color.light-text	{ color: #fff; }
+
+a.unit
+{
+	pointer-events:		none;
+	text-decoration:	none;
+	color:				var(--color);
+}
+
+span.live.livespac {
+	display:		inline-block;
+    border:			1px solid var(--border-color);
+    padding:		0px 5px 0px 5px;
+    border-radius:	5px;
+	margin:	3px 3px 3px 3px;
+}
+
+span.live.livespac.songparts	{ background: #fee; }
+span.live.livespac.focus		{ background: #fee; }
+span.live.livespac.live-3d		{ background: #fee; }
+span.live.livespac.live-2d		{ background: #fee; }
+
+a.invalid:hover 				{ background-color: #fff; }
+td.invalid:hover 				{ background-color: fff; }
+span.invalid:hover 				{ background-color: fff; }
+td.removed-cell					{ display: none; }
+
+/* ストーリー */
+table.list.story				{ font-size: 15px; }
+
+/*h4.list.story					{ margin-top: 0px; }*/
+h4.list.story					{ margin-bottom: 0px; }
+table.list.story				{ width: 780px; }
+th.list.story.capter			{ width: 8%;  text-align: center; background-color: #eee; }
+td.list.story.title				{ width: 30%; padding-left: 5px;  background-color: #eee; }
+td.list.story.release			{ width: 12%; text-align: center; background-color: #eee; }
+td.list.story.point				{ width: 12%; text-align: center; background-color: #eee; }
+td.list.story.summary			{ width: 50%; padding-left: 5px; }
+td.list.story.idols				{ padding-left: 5px; }
+
+th.list.story.capter			{ width: 8%; }
+th.list.story.title				{ width: 30%; }
+th.list.story.point				{ width: 12%; }
+th.list.story.summary			{ width: 50%; }
+
+th.list.story.capter.unit-1		{ background-color: var(--unit-1); }
+th.list.story.capter.unit-2		{ background-color: var(--unit-2); color: white; }
+th.list.story.capter.unit-3		{ background-color: var(--unit-3); color: black; }
+th.list.story.capter.unit-4		{ background-color: var(--unit-4); color: black; }
+th.list.story.capter.unit-5		{ background-color: var(--unit-5); color: white; }
+th.list.story.capter.unit-6		{ background-color: var(--unit-6); color: white; }
+th.list.story.capter.unit-7		{ background-color: var(--unit-7); color: white; }
+th.list.story.capter.unit-8		{ background-color: var(--unit-8); color: white; }
+
+table.list.story.idol			{ text-align: left; margin-top: 0em; }
+td.list.story.idol				{ text-align: left; }
+td.list.story.event.point		{ text-align: right; padding-right: 10px; }
+
+th.list.story.capter.idol-1		{ background-color: var(--idol-1); }
+th.list.story.capter.idol-2		{ background-color: var(--idol-2); color: white; }
+th.list.story.capter.idol-3		{ background-color: var(--idol-3); }
+th.list.story.capter.idol-4		{ background-color: var(--idol-4); }
+th.list.story.capter.idol-5		{ background-color: var(--idol-5); color: white; }
+th.list.story.capter.idol-6		{ background-color: var(--idol-6); color: white; }
+th.list.story.capter.idol-7		{ background-color: var(--idol-7); color: white; }
+th.list.story.capter.idol-8		{ background-color: var(--idol-8); }
+th.list.story.capter.idol-9		{ background-color: var(--idol-9); color: white; }
+th.list.story.capter.idol-10	{ background-color: var(--idol-10); color: white; }
+th.list.story.capter.idol-11	{ background-color: var(--idol-11); }
+th.list.story.capter.idol-12	{ background-color: var(--idol-12); }
+th.list.story.capter.idol-13	{ background-color: var(--idol-13); }
+th.list.story.capter.idol-14	{ background-color: var(--idol-14); }
+th.list.story.capter.idol-15	{ background-color: var(--idol-15); }
+th.list.story.capter.idol-16	{ background-color: var(--idol-16); }
+th.list.story.capter.idol-17	{ background-color: var(--idol-17); color: white; }
+th.list.story.capter.idol-18	{ background-color: var(--idol-18); }
+th.list.story.capter.idol-19	{ background-color: var(--idol-19); }
+th.list.story.capter.idol-20	{ background-color: var(--idol-20); }
+th.list.story.capter.idol-21	{ background-color: var(--idol-21); color: white; }
+th.list.story.capter.idol-22	{ background-color: var(--idol-22); color: white; }
+th.list.story.capter.idol-23	{ background-color: var(--idol-23); }
+th.list.story.capter.idol-24	{ background-color: var(--idol-24); }
+th.list.story.capter.idol-25	{ background-color: var(--idol-25); color: white; }
+th.list.story.capter.idol-26	{ background-color: var(--idol-26); color: white; }
+th.list.story.capter.idol-27	{ background-color: var(--idol-27); }
+th.list.story.capter.idol-28	{ background-color: var(--idol-28); }
