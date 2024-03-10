@@ -573,3 +573,37 @@ th.list.story.capter.idol-27	{ background-color: var(--idol-27); }
 th.list.story.capter.idol-28	{ background-color: var(--idol-28); }
 
 td.removed-cell					{ display: none; }
+
+/* ガシャ */
+table.list.gasha				{ width: 780px; }
+th.list.gasha.id				{ width: 22%; }
+th.list.gasha.resource-id		{ width: 15%; }
+
+th.list.gasha.datetime			{ width: 25%; }
+th.list.gasha.kind				{ width: 32%; }
+th.list.gasha.name				{ width: 43%; }
+td.list.gasha.datetime			{ text-align: center; }
+/*th.list.gasha.attr				{ width: 32%; }*/
+
+span.rarity-3					{ color: #c00; }
+span.rarity-2					{ color: #f60; }
+span.list.gasha.rarity.rate		{ display: none; }
+
+td.list.gasha.kind				{ font-weight: bold; }
+td.list.gasha.kind.produce		{ background-color: #eff; }
+td.list.gasha.kind.support		{ background-color: #fee; }
+td.list.gasha.name.produce		{ background-color: #eff; }
+td.list.gasha.name.support		{ background-color: #fee; }
+
+h4.list.gasha					{ margin-bottom: 0px; }
+
+table.details.gasha				{ width: 780px; }
+th.details.gasha.rarity			{ width: 9%; }
+th.details.gasha.name			{ width: 45%; }	/* 54 */
+th.details.gasha.rate			{ width: 9%; }	/* 72 18 */
+th.details.gasha.summary		{ width: 28%; }
+
+td.details.gasha.rarity			{ text-align: center; }
+td.details.gasha.rate			{ text-align: center; }
+
+td.details.gasha.pickup			{ background-color: #efe; }
