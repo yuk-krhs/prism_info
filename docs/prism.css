@@ -119,19 +119,27 @@ a							{ color: var(--link-color); }
 a:visited					{ color: var(--visited-color); }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	border-style: none;
-	table-layout: fixed;
+	border-collapse:	collapse;
+	border-spacing:		0;
+	border-style:		none;
+	table-layout:		fixed;
 }
 
 td {
-	border: 1pt solid var(--border-color);
+	border:				1pt solid var(--border-color);
+	padding-left:		5px;
+	padding-right:		5px;
+	padding-top:		1px;
+	padding-bottom:		1px;
 }
 
 th {
-	border: 1pt solid var(--border-color);
-	background-color: var(--th-bg);
+	border:				1pt solid var(--border-color);
+	background-color:	var(--th-bg);
+	padding-left:		2px;
+	padding-right:		2px;
+	padding-top:		1px;
+	padding-bottom:		1px;
 }
 
 p {
@@ -141,10 +149,11 @@ p {
 	margin-bottom:		0pt;
 }
 
-tr.invisible-row		{ display: none;	}
-
-span.comment			{ font-size: 14px; display: inline-block; }
-div.comment				{ width: 780px; }
+tr.invisible-row				{ display: none;	}
+span.comment					{ font-size: 14px; display: inline-block; }
+div.comment						{ width: 780px; }
+span.line						{ display: block; }
+.no-margin						{ padding: 0px; }
 
 /* Pアイドル */
 table.list.pidol 				{ width: 1000px; }
@@ -195,7 +204,7 @@ table.head						{ width: 780px; }
 table.head						{ border-style: none; }
 td.head.title					{ width: 60%; border-style: none; }
 td.head.title.link-1			{ width: 80%; border-style: none; }
-span.head.page-title			{ font-size: 14pt; font-weight: bold; color: #55C}
+span.head.page-title			{ font-size: 14pt; font-weight: bold; color: #55C; }
 td.head.link					{ width: 20%; text-align: center; }
 td.head.link:hover 				{ width: 20%; text-align: center; }
 td.head.link					{ background-color: var(--bg-color); }
@@ -419,6 +428,10 @@ th.list.idol.waist				{ width: 5%; }
 th.list.idol.hip				{ width: 5%; }	/* 100 */
 td.list.idol					{ text-align: center; }
 
+table.list.produce				{ width: 780px; }
+table.list.support				{ width: 780px; }
+table.list.cloth				{ width: 780px; }
+
 div.list.idol.idolname {
 	display: flex;
 /*	justify-content: space-between;
@@ -433,8 +446,28 @@ span.list.idol.idolname {
 	flex-grow: 1;
 }
 
+td {
+	position: relative;
+}
+
 a.idol	 						{ display: block; }
+a.fill {
+	display:					block;
+/*	background-color:			#dfd;	*/
+}
+a.fill2 {
+	position:					absolute;
+	width:						100%;
+	height:						100%;
+	top:						0;
+	left:						0;
+	display:					flex;
+	justify-content:			center;
+	align-items:				center;
+/*	background-color:			#fdd;	*/
+}
 /*td.list.idol.unitname:hover 	{ background-color: #fee; }*/
+td.list.idol.unitname:hover 	{ background-color: #fee; }
 td.list.idol.idolname:hover 	{ background-color: #fee; }
 
 /* アイドル */
@@ -457,22 +490,22 @@ span.star.empty					{ color: #aaa; margin: 0px; padding: 0px; letter-spacing: -3
 
 h4.list							{ margin-top: 0.5em; margin-bottom: 0px; }
 
-table.list.idol.produce			{ margin-top: 0em; }
-th.list.pidol.star				{ width: 9%; }
-th.list.pidol.cardname			{ width: 42%; }
-th.list.pidol.implement			{ width: 14%; }
-th.list.pidol.obtain			{ width: 35%; }
-td.list.pidol.implement			{ text-align: center; }
+table.list.produce				{ margin-top: 0em; }
+th.list.produce.star			{ width: 10%; }
+th.list.produce.cardname		{ width: 41%; }
+th.list.produce.implement		{ width: 14%; }
+th.list.produce.obtain			{ width: 35%; }
+td.list.produce.implement		{ text-align: center; }
 
-table.list.idol.support			{ margin-top: 0em; }
-th.list.support.rarity			{ width: 9%; }
-th.list.support.cardname		{ width: 42%; }
+table.list.support				{ margin-top: 0em; }
+th.list.support.rarity			{ width: 10%; }
+th.list.support.cardname		{ width: 41%; }
 th.list.support.implement		{ width: 14%; }
 th.list.support.obtain			{ width: 35%; }
 td.list.support.rarity			{ text-align: center; }
 td.list.support.implement		{ text-align: center; }
 
-table.list.idol.costume			{ margin-top: 0em; }
+table.list.costume				{ margin-top: 0em; }
 th.list.costume.kind			{ width: 6%; }
 th.list.costume.costumename		{ width: 35%; }
 th.list.costume.implement		{ width: 10%; }
@@ -488,12 +521,14 @@ td.list.cloth					{ font-size: 12px; }
 td.details.idol.color.dark-text		{ color: #000; }
 td.details.idol.color.light-text	{ color: #fff; }
 
+/*
 a.unit
 {
 	pointer-events:		none;
 	text-decoration:	none;
 	color:				var(--color);
 }
+*/
 
 span.live.livespac {
 	display:		inline-block;
@@ -574,36 +609,136 @@ th.list.story.capter.idol-28	{ background-color: var(--idol-28); }
 
 td.removed-cell					{ display: none; }
 
+/* ユニット */
+table.details.unit				{ width: 780px; }
+table.details.unit				{ margin-top: 1em; }
+div.idolcolor					{ display: block; margin: 0px; padding: 0px; }
+div.unitcolor					{ margin-top: 0.8em; margin-bottom: 0.8em; }
+.dark-text						{ color: #000; }
+.light-text						{ color: #fff; }
+
+div.details.unit.unitcolor		{ display: block; padding-top: 15px; padding-bottom: 15px; }
+
+td.details.unit					{ text-align: center; }
+td.details.unit.unitcolor		{ width: 12%; }
+td.details.unit.unitname		{ width: 88%; padding-left: 10px; }
+/*td.details.unit.unitname		{ text-align: left; }*/
+td.details.unit.kana			{ padding: 0px; }
+
+td.idol-col-1-2					{ width: (88% / 2); }
+td.idol-col-2-2					{ width: (88% / 2); }
+td.idol-col-1-3					{ width: (88% / 3); }
+td.idol-col-2-3					{ width: (88% / 3); }
+td.idol-col-3-3					{ width: (88% / 3); }
+td.idol-col-1-4					{ width: (88% / 4); }
+td.idol-col-2-4					{ width: (88% / 4); }
+td.idol-col-3-4					{ width: (88% / 4); }
+td.idol-col-4-4					{ width: (88% / 4); }
+td.idol-col-1-5					{ width: (88% / 5); }
+td.idol-col-2-5					{ width: (88% / 5); }
+td.idol-col-3-5					{ width: (88% / 5); }
+td.idol-col-4-5					{ width: (88% / 5); }
+td.idol-col-5-5					{ width: (88% / 5); }
+
+table.list.song.unit			{ width: 780px; }
+th.list.song.songname			{ width: 27%; }
+th.list.song.unitname			{ width: 13%; }
+th.list.song.lyricist			{ width: (60% / 3); }
+th.list.song.composer			{ width: (60% / 3); }
+th.list.song.arranger			{ width: (60% / 3); }
+td.list.song.unitname			{ text-align: center; }
+
+td.list.song {
+	word-break:		keep-all;
+	overflow-wrap:	break-word;
+}
+
+/*
+td.list.song.lyricist			{ font-size: 14px; }
+td.list.song.composer			{ font-size: 14px; }
+td.list.song.arranger			{ font-size: 14px; }
+*/
+
 /* ガシャ */
 table.list.gasha				{ width: 780px; }
 th.list.gasha.id				{ width: 22%; }
 th.list.gasha.resource-id		{ width: 15%; }
 
 th.list.gasha.datetime			{ width: 25%; }
-th.list.gasha.kind				{ width: 32%; }
-th.list.gasha.name				{ width: 43%; }
+th.list.gasha.gashakind			{ width: 32%; }
+th.list.gasha.gashaname			{ width: 43%; }
 td.list.gasha.datetime			{ text-align: center; }
 /*th.list.gasha.attr				{ width: 32%; }*/
 
 span.rarity-3					{ color: #c00; }
 span.rarity-2					{ color: #f60; }
-span.list.gasha.rarity.rate		{ display: none; }
+span.list.gasha.rate			{ display: none; }
 
 td.list.gasha.kind				{ font-weight: bold; }
-td.list.gasha.kind.produce		{ background-color: #eff; }
-td.list.gasha.kind.support		{ background-color: #fee; }
-td.list.gasha.name.produce		{ background-color: #eff; }
-td.list.gasha.name.support		{ background-color: #fee; }
+td.list.gasha.gashakind.produce	{ background-color: #eff; }
+td.list.gasha.gashakind.support	{ background-color: #fee; }
+td.list.gasha.gashaname.produce	{ background-color: #eff; }
+td.list.gasha.gashaname.support	{ background-color: #fee; }
 
 h4.list.gasha					{ margin-bottom: 0px; }
 
 table.details.gasha				{ width: 780px; }
 th.details.gasha.rarity			{ width: 9%; }
-th.details.gasha.name			{ width: 45%; }	/* 54 */
-th.details.gasha.rate			{ width: 9%; }	/* 72 18 */
+th.details.gasha.name			{ width: 45%; }
+th.details.gasha.rate			{ width: 9%; }
 th.details.gasha.summary		{ width: 28%; }
 
 td.details.gasha.rarity			{ text-align: center; }
 td.details.gasha.rate			{ text-align: center; }
 
 td.details.gasha.pickup			{ background-color: #efe; }
+
+/* ミッション */
+table.list.mission				{ width: 780px; }
+table.details.mission			{ width: 780px; }
+table.details.reward			{ width: 780px; }
+
+/* ミッション・シーズン */
+table.list.mission				{ margin-top: 1em; }
+
+th.list.mission.seasonname		{ width: 50%; }
+th.list.mission.dates			{ width: 50%; }
+
+th.details.mission.missonname	{ width: 88%; }
+th.details.mission.exp			{ width: 12%; }
+th.details.mission.filter		{ width: 12%; }
+td.details.mission.exp			{ padding-right: 1em; text-align: right; }
+td.details.mission.filter		{ text-align: center; }
+
+th.details.mission.reward.rank			{ width: 6%; }
+th.details.mission.reward.rewarditem	{ width: 47.5%; }
+td.details.mission.reward.rank			{ text-align: center; }
+td.details.mission.season				{ font-size: 15px ;}
+
+div.details.mission.reward.rewarditem {
+	display: flex;
+/*	justify-content: space-between;
+	width: 200px;*/
+}
+
+span.details.mission.reward.amount {
+}
+
+span.details.mission.reward.itemname {
+	text-align: left;
+	flex-grow: 1;
+}
+
+h4.mission			{ margin-bottom: 0.1em; }
+
+/* 限定 */
+table.details.limited.reward			{ width: 420px; }
+
+/*
+span.ticket.bronze {
+	color: transparent;
+	 text-shadow: 0 0 gold;
+}
+*/
+
+div.invisible	{ display: none; }
