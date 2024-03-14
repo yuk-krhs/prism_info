@@ -700,9 +700,10 @@ table.details.reward			{ width: 780px; }
 
 /* ミッション・シーズン */
 table.list.mission				{ margin-top: 1em; }
+table.list.mission				{ margin-top: 0.2em; }
 
-th.list.mission.seasonname		{ width: 50%; }
-th.list.mission.dates			{ width: 50%; }
+th.list.mission.seasonname		{ width: 45%; }
+th.list.mission.dates			{ width: 55%; }
 
 th.details.mission.missonname	{ width: 88%; }
 th.details.mission.exp			{ width: 12%; }
@@ -732,7 +733,7 @@ span.details.mission.reward.itemname {
 h4.mission			{ margin-bottom: 0.1em; }
 
 /* 限定 */
-table.details.limited.reward			{ width: 420px; }
+table.details.limited.reward			{ width: 450px; }
 
 /*
 span.ticket.bronze {
