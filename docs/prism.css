@@ -735,6 +735,61 @@ h4.mission			{ margin-bottom: 0.1em; }
 /* 限定 */
 table.details.limited.reward			{ width: 450px; }
 
+/* ショップ */
+table.list.shop					{ width: 780px; }
+table.details.shop				{ width: 780px; }
+
+th.list.shop.name				{ width: 64%; }
+th.list.shop.product			{ width: 64%; }
+th.list.shop.price				{ width: 36%; }
+
+th.details.shop.name			{ width: 34%; }
+th.details.shop.product			{ width: 50%; }
+th.details.shop.price			{ width: 16%; }
+
+th.details.jewel.name			{ width: 40%; }
+th.details.jewel.product		{ width: 20%; }
+th.details.jewel.price			{ width: 20%; }
+th.details.jewel.ratio			{ width: 20%; }
+
+td.details.shop.price			{ text-align: right; }
+td.details.shop.price			{ padding-right: 0.5em; }
+td.details.jewel.ratio			{ text-align: center; }
+
+div.product {
+	display: flex;
+/*	justify-content: space-between;
+	width: 200px;*/
+}
+
+span.amount {
+}
+
+span.itemname {
+	text-align: left;
+	flex-grow: 1;
+}
+
+span.paid.jewel {
+	filter:		contrast(100%) sepia(0%) hue-rotate(210deg);
+}
+
+td.shop.price span.shop.itemname {
+	/*text-align: center; */
+	margin-left: 0.0em;
+}
+
+div.implement {
+	text-align:		center;
+	color:			#22c;
+	font-size:		14px;
+	font-weight:	bold;
+}
+
+h3.shop {
+	margin-bottom:	0.2em;
+}
+
 /*
 span.ticket.bronze {
 	color: transparent;
