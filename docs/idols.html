@@ -5,10 +5,10 @@
     <meta name="robots" content="index,follow">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
-    <link rel="stylesheet" type="text/css" media="all" href="prism.css?hash=C9150D7C8413820BF74A5C4EEE63C520">
+    <link rel="stylesheet" type="text/css" media="all" href="prism.css?hash=3B2F0D28AE0EB5AFDA3FC20D8AB4B7A9">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script type="text/javascript" src="prism.js?hash=EF7AB03DE72DBD6ED6A06D913C947AE8"></script>
-    <script type="text/javascript" src="sortable-table.js?hash=11F15139CCEFFE4903C6DBF5061FB765"></script>
+    <script type="text/javascript" src="prism.js?hash=7F892F06F6201CAF55119EE24B46A928"></script>
+    <script type="text/javascript" src="sortable-table.js?hash=9861A02163BDEB81987E7E9C29EBD5E2"></script>
     <title>シャニソン ユニット・アイドル一覧 - SONG for PRISM</title>
   </head>
   <body class="idol">
@@ -28,34 +28,34 @@
 </table>
 <table id="idol-list" class="list idol">
 <tr class="list idol">
-<th class="list idol sortable unitname asc" data-id="0">
+<th class="list idol sortable mergeable unitname asc" data-id="0">
 ユニット名
 </th>
-<th class="list idol sortable idolname" data-id="1">
+<th class="list idol sortable mergeable idolname" data-id="1">
 アイドル
 </th>
-<th class="list idol sortable birthplace" data-id="2">
+<th class="list idol sortable mergeable birthplace" data-id="2">
 出身地
 </th>
-<th class="list idol sortable age" data-id="3">
+<th class="list idol sortable mergeable age" data-id="3">
 年齢
 </th>
-<th class="list idol sortable birthday" data-id="4">
+<th class="list idol sortable mergeable birthday" data-id="4">
 誕生日
 </th>
-<th class="list idol sortable height" data-id="5">
+<th class="list idol sortable mergeable height" data-id="5">
 身長
 </th>
-<th class="list idol sortable weight" data-id="6">
+<th class="list idol sortable mergeable weight" data-id="6">
 体重
 </th>
-<th class="list idol sortable bust" data-id="7">
+<th class="list idol sortable mergeable bust" data-id="7">
 B
 </th>
-<th class="list idol sortable waist" data-id="8">
+<th class="list idol sortable mergeable waist" data-id="8">
 W
 </th>
-<th class="list idol sortable hip" data-id="9">
+<th class="list idol sortable mergeable hip" data-id="9">
 H
 </th>
 </tr>
@@ -958,27 +958,9 @@ H
 </table>
 <span class="comment">ユニット名は略称の場合があります。正式名称は個々のユニット、アイドルページ内に記載しています。</span>
 <script>
-$('th.sortable').click(function() { sortTable($(this)); mergeIdolInfo(); });
+$('th.sortable').click(function() { resetVisible('#idol-list'); sortTable($(this)); mergeTableRows('#idol-list'); });
 
-mergeIdolInfo();
-
-function mergeIdolInfo()
-{
-    const table = $('#idol-list');
-
-    table.find("td.removed-cell").each(function() { $(this).removeClass('removed-cell'); });
-
-    mergeTableRows(table, 0);
-    mergeTableRows(table, 1);
-    mergeTableRows(table, 2);
-    mergeTableRows(table, 3);
-    mergeTableRows(table, 4);
-    mergeTableRows(table, 5);
-    mergeTableRows(table, 6);
-    mergeTableRows(table, 7);
-    mergeTableRows(table, 8);
-    mergeTableRows(table, 9);
-}
+mergeTableRows('#idol-list');
 </script>
   </body>
 </html>

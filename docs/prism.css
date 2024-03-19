@@ -492,16 +492,16 @@ h4.list							{ margin-top: 0.5em; margin-bottom: 0px; }
 
 table.list.produce				{ margin-top: 0em; }
 th.list.produce.star			{ width: 10%; }
-th.list.produce.cardname		{ width: 41%; }
+th.list.produce.cardname		{ width: 36%; }
 th.list.produce.implement		{ width: 14%; }
-th.list.produce.obtain			{ width: 35%; }
+th.list.produce.obtain			{ width: 40%; }
 td.list.produce.implement		{ text-align: center; }
 
 table.list.support				{ margin-top: 0em; }
 th.list.support.rarity			{ width: 10%; }
-th.list.support.cardname		{ width: 41%; }
+th.list.support.cardname		{ width: 36%; }
 th.list.support.implement		{ width: 14%; }
-th.list.support.obtain			{ width: 35%; }
+th.list.support.obtain			{ width: 40%; }
 td.list.support.rarity			{ text-align: center; }
 td.list.support.implement		{ text-align: center; }
 
@@ -606,8 +606,6 @@ th.list.story.capter.idol-25	{ background-color: var(--idol-25); color: white; }
 th.list.story.capter.idol-26	{ background-color: var(--idol-26); color: white; }
 th.list.story.capter.idol-27	{ background-color: var(--idol-27); }
 th.list.story.capter.idol-28	{ background-color: var(--idol-28); }
-
-td.removed-cell					{ display: none; }
 
 /* ユニット */
 table.details.unit				{ width: 780px; }
@@ -798,3 +796,294 @@ span.ticket.bronze {
 */
 
 div.invisible	{ display: none; }
+
+/* Ｐアイドル */
+table.list.pidol				{ width: 780px; }
+
+th.list.pidol.index				{ width: 5%; }
+th.list.pidol.star				{ width: 4%; }
+th.list.pidol.cardname			{ width: 40%; }
+th.list.pidol.idolname			{ width: 12%; } /* 56 */
+th.list.pidol.cardname			{ width: 47%; }
+
+th.list.pidol.unitname			{ width: 14%; } /* 44 */
+th.list.pidol.obtain			{ width: 16%; }
+th.list.pidol.implement			{ width: 14%; }
+
+th.list.pidol.status.type		{ width: 8%; }
+th.list.pidol.status.vo			{ width: 10.81%; }
+th.list.pidol.status.da			{ width: 10.81%; }
+th.list.pidol.status.vi			{ width: 10.81%; }
+th.list.pidol.status.me			{ width: 10.81%; }
+
+th.list.pidol.description		{ width: 45.2%; }
+
+td.list.pidol.index				{ text-align: center; }
+td.list.pidol.star				{ text-align: center; }
+td.list.pidol.idolname			{ text-align: center; }
+td.list.pidol.unitname			{ text-align: center; }
+td.list.pidol.obtain			{ text-align: center; }
+td.list.pidol.implement			{ text-align: center; }
+
+td.list.pidol.star				{ font-weight: bold; }
+td.list.pidol.star.star-1		{ color: #aaa; }
+td.list.pidol.star.star-2		{ color: #22f; }
+td.list.pidol.star.star-3		{ color: #f00; }
+
+div.pidol-filter1 {
+	margin:		    4px 3px 4px 3px;
+	font-size:		13px;
+	width:			780px;
+}
+
+div.sharas-filter1 {
+	margin:		    4px 3px 4px 3px;
+	font-size:		13px;
+	width:			780px;
+}
+
+div.star-checker {
+	display:		inline-block;
+/*	margin:		    4px 3px 4px 3px;	*/
+	margin:		    0px;
+	width:			220px;
+/*	background:		#eef; */
+}
+
+div.rarity-checker {
+	display:		inline-block;
+/*	margin:		    4px 3px 4px 3px;	*/
+	margin:		    0px;
+	width:			220px;
+/*	background:		#eef; */
+}
+
+div.obtain-checker {
+	display:		inline-block;
+/*	margin:		    4px 3px 4px 3px;	*/
+	margin:		    0px;
+	width:			295px;
+/*	background:		#efe; */
+}
+
+div.disp-selector {
+	display:		inline-block;
+/*	margin:		    4px 3px 4px 3px;	*/
+	margin:		    0px;
+	width:			252px;
+/*	background:		#eef; */
+}
+
+div.unit-checker {
+	margin:		    4px 3px 4px 3px;
+	width:			780px;
+}
+
+label.checker input {
+    display:		none;
+}
+
+label.checker {
+	margin:		0px;
+	padding:	0px;
+}
+
+label.checker span {
+	width:			80px;
+	display:		inline-block;
+
+    font-size:		13px;
+	text-align:		center;
+    border:			1px;
+    border-radius:	2px;
+	margin:			0px;
+	padding:		10px 5px 10px 5px;
+
+    color:			#888;
+    background:		#ddd;
+    border:			1px solid #888;
+}
+
+label.checker.star-check span {
+	width:			54px;
+	display:		inline-block;
+}
+
+label.checker.rarity-check span {
+	width:			54px;
+	display:		inline-block;
+}
+
+label.checker.obtain-check span {
+	width:			80px;
+	display:		inline-block;
+}
+
+label.checker.unit-check span {
+	width:			80px;
+	display:		inline-block;
+}
+
+label.checker input:checked + span {
+    color:			#000;
+    background:		#fcc;
+    border:			1px solid #000;
+}
+
+label.selector input {
+    display:		none;
+}
+
+label.selector {
+	margin:			0px;
+	padding:		0px;
+}
+
+label.selector span {
+	width:			80px;
+	display:		inline-block;
+
+    font-size:		13px;
+	text-align:		center;
+    border:			1px;
+    border-radius:	2px;
+	margin:			0px;
+	padding:		10px 5px 10px 5px;
+
+    color:			#888;
+    background:		#ddd;
+    border:			1px solid #888;
+}
+
+label.selector.disp-check span {
+	width:			80px;
+	display:		inline-block;
+}
+
+label.selector input:checked + span {
+    color:			#000;
+    background:		#bfb;
+    border:			1px solid #000;
+}
+
+table.details.pidol				{ width: 780px; }
+table.details.pidol.summary		{ margin-top: 1em; }
+th.details.pidol.star			{ width: 10%; }
+th.details.pidol.cardname		{ width: 50%; }
+th.details.pidol.vocal			{ width: 8%; }
+th.details.pidol.dance			{ width: 8%; }
+th.details.pidol.visual			{ width: 8%; }
+th.details.pidol.mental			{ width: 8%; }
+th.details.pidol.cost			{ width: 8%; }
+span.evolution					{ font-weight: bold; color: #000; display: block; }
+
+/*
+span.evolution-4
+{
+	background:			linear-gradient(0deg, #f90, #a50);
+	color:				var(--color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+span.evolution-5
+{
+	background:			linear-gradient(0deg, #f4c, #64f);
+	color:				var(--color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+*/
+
+th.details.pidol.idol-skill.evolution		{ width: 5%; }
+th.details.pidol.idol-skill.skill-name		{ width: 25%; }
+th.details.pidol.idol-skill.level			{ width: 5%; }
+th.details.pidol.idol-skill.pp				{ width: 5%; }
+th.details.pidol.idol-skill.description		{ width: 60%; }
+
+td.details.pidol.idol-skill.evolution		{ text-align: center; }
+td.details.pidol.idol-skill.level			{ text-align: center; }
+td.details.pidol.idol-skill.pp				{ text-align: center; }
+td.details.pidol.vocal						{ text-align: center; }
+td.details.pidol.dance						{ text-align: center; }
+td.details.pidol.visual						{ text-align: center; }
+td.details.pidol.mental						{ text-align: center; }
+td.details.pidol.cost						{ text-align: center; }
+td.details.pidol.implement					{ text-align: center; }
+
+th.details.pidol.potential-idol-skill.skill-name	{ width: 25%; }
+th.details.pidol.potential-idol-skill.level			{ width: 5%; }
+th.details.pidol.potential-idol-skill.description	{ width: 70%; }
+
+th.details.pidol.potential-idol-skill.skill-name	{ width: 25%; }
+th.details.pidol.potential-idol-skill.effect		{ width: 25%; }
+th.details.pidol.potential-idol-skill.level-1		{ width: 10%; }
+th.details.pidol.potential-idol-skill.level-2		{ width: 10%; }
+th.details.pidol.potential-idol-skill.level-3		{ width: 10%; }
+th.details.pidol.potential-idol-skill.level-4		{ width: 10%; }
+th.details.pidol.potential-idol-skill.level-5		{ width: 10%; }
+td.details.pidol.potential-idol-skill.time			{ text-align: center; }
+td.details.pidol.potential-idol-skill.value			{ text-align: center; }
+td.details.pidol.potential-idol-skill.level			{ text-align: center; }
+
+th.details.pidol.potential-idol-skill.effect		{ width: 70%; }
+
+th.details.pidol.idol-event.event-name		{ width: 28%; }
+th.details.pidol.idol-event.description		{ width: 72%; }
+
+h4.pidol						{ margin-bottom: 0.2em; }
+
+/* Ｓキャラ */
+table.list.schara				{ width: 780px; }
+
+th.list.schara.index			{ width: 5%; }
+th.list.schara.rarity			{ width: 6%; }
+th.list.schara.idolname			{ width: 12%; }
+th.list.schara.cardname			{ width: 45%; }
+
+th.list.schara.unitname			{ width: 14%; } /* 44 */
+th.list.schara.obtain			{ width: 16%; }
+th.list.schara.implement		{ width: 14%; }
+
+td.list.schara.index			{ text-align: center; }
+td.list.schara.rarity			{ text-align: center; }
+td.list.schara.idolname			{ text-align: center; }
+td.list.schara.unitname			{ text-align: center; }
+td.list.schara.obtain			{ text-align: center; }
+td.list.schara.implement		{ text-align: center; }
+
+td.list.schara.rarity			{ font-weight: bold; }
+td.list.schara.rarity.rarity-1	{ color: #aaa; }
+td.list.schara.rarity.rarity-2	{ color: #22f; }
+td.list.schara.rarity.rarity-3	{ color: #f00; }
+
+th.removed-cell					{ display: none; }
+td.removed-cell					{ display: none; }
+td.invisible					{ display: none; }
+
+table.details.schara			{ width: 780px; }
+table.details.schara.summary	{ margin-top: 1em; }
+
+th.details.schara.rarity		{ width: 5%; }
+th.details.schara.cardname		{ width: 55%; }
+th.details.schara.level			{ width: 15%; }
+th.details.schara.good-schedule	{ width: 25%; }
+
+th.details.schara.obtain		{ width: 75%; }
+th.details.schara.implement		{ width: 25%; }
+
+th.details.schara.support-effect.level			{ width: 5%; }
+th.details.schara.support-effect.effect-name	{ width: 35%; }
+th.details.schara.support-effect.description	{ width: 60%; }
+
+th.details.schara.support-skill.skill-name		{ width: 40%; }
+th.details.schara.support-skill.description		{ width: 60%; }
+
+th.details.schara.support-event.event-name		{ width: 28%; }
+th.details.schara.support-event.description		{ width: 72%; }
+
+td.details.schara.level			{ text-align: center; }
+td.details.schara.implement		{ text-align: center; }
+td.details.schara.good-schedule	{ text-align: center; }
+
+h4.schara						{ margin-bottom: 0.2em; }
