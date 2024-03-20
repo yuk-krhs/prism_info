@@ -435,6 +435,7 @@ table.list.rhythm td.expert				{ background-color: var(--ex-bg2); }
 table.list.rhythm td.master				{ background-color: var(--ma-bg2); }
 
 table.list.rhythm td.navi	 			{ border-style: none; }
+table.details.song td.implement			{ text-align: left; }
 
 table.list.rhythm td.difficulty:hover 	{ background-color: var(--hover-hilight2); }
 table.list.rhythm td.songname:hover 	{ background-color: var(--hover-hilight1); }
