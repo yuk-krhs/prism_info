@@ -8,6 +8,21 @@
 	--border-color:		#444;
 	--th-bg:			#ddd;
 
+	--content-width:	780px;
+	--head-width:		772px;
+	--font-size-sx:		12px;
+	--font-size-sss:	13px;
+	--font-size-ss:		14px;
+	--font-size-s:		15px;
+	--font-size:		16px;
+	--font-size-l:		17px;
+	--font-size-ll:		18px;
+	--font-size-lll:	19px;
+	--font-size-lx:		20px;
+
+	--hover-hilight1:	#fee;
+	--hover-hilight2:	#fff;
+
 	--vo-bg: #ffbbbb;
 	--da-bg: #bbddff;
 	--vi-bg: #ffffaa;
@@ -110,19 +125,20 @@
 
 /* 基本設定 */
 body {
-	font-size:			16px;
+	font-size:			var(--font-size);
 	color:				var(--color);
 	background-color:	var(--bg-color);
 }
 
-a							{ color: var(--link-color); }
-a:visited					{ color: var(--visited-color); }
+a										{ color: var(--link-color); }
+a:visited								{ color: var(--visited-color); }
 
 table {
 	border-collapse:	collapse;
 	border-spacing:		0;
 	border-style:		none;
 	table-layout:		fixed;
+	margin-top:			0;
 }
 
 td {
@@ -131,6 +147,7 @@ td {
 	padding-right:		5px;
 	padding-top:		1px;
 	padding-bottom:		1px;
+	position:			relative;
 }
 
 th {
@@ -149,74 +166,160 @@ p {
 	margin-bottom:		0pt;
 }
 
-tr.invisible-row				{ display: none;	}
-span.comment					{ font-size: 14px; display: inline-block; }
-div.comment						{ width: 780px; }
-span.line						{ display: block; }
-.no-margin						{ padding: 0px; }
-
-/* Pアイドル */
-table.list.pidol 				{ width: 1000px; }
-th.status.vo					{ background-color: var(--vo-bg); }
-th.status.da					{ background-color: var(--da-bg); }
-th.status.vi					{ background-color: var(--vi-bg); }
-th.status.me					{ background-color: var(--me-bg); }
-th.list.initial-star 			{ width: 4%; }
-th.list.card 					{ width: 25%; }
-th.list.idol 					{ width: 10%; }
-th.list.impl 					{ width: 11%; }
-
-td.status.vo					{ background-color: var(--vo-bg2); }
-td.status.da					{ background-color: var(--da-bg2); }
-td.status.vi					{ background-color: var(--vi-bg2); }
-td.status.me					{ background-color: var(--me-bg2); }
-
-th.list.status.vo 				{ width: 5%; }	/* 25% */
-th.list.status.da 				{ width: 5%; }
-th.list.status.vi 				{ width: 5%; }
-th.list.status.me 				{ width: 5%; }
-th.list.status.all 				{ width: 5%; }
-td.list.initial-star			{ text-align: center; }
-td.list.impl					{ text-align: center; }
-td.list.status					{ text-align: center; }
-
-table.details.pidol 			{ width: 512px; }
-th.details.start				{ width: 16%; }
-th.details.vo					{ width: 14%; }
-th.details.da					{ width: 14%; }
-th.details.vi					{ width: 14%; }
-th.details.me					{ width: 14%; }
-th.details.all					{ width: 28%; }
-td.details.initial-star			{ text-align: center; }
-td.details.id					{ text-align: center; }
-td.details.impl					{ text-align: center; }
-td.details.status				{ text-align: center; }
-
-h4.details.pidol {
+h4 {
 	margin-top:			0.5em;
-	margin-bottom:		0.0em;
+	margin-bottom:		0;
 }
 
-table.details.pidol.skill 		{ width: 1000px; }
+h3 {
+	margin-top:			0.8em;
+	margin-bottom:		0em;
+}
 
+span.comment							{ font-size: 14px; display: inline-block; }
+div.comment								{ width: var(--content-width); }
+span.line								{ display: block; }
+.no-margin								{ padding: 0px; }
+
+/*----- デフォルト -----*/
+table.head 								{ width: var(--content-width); }
+table.update							{ width: var(--content-width); }
+table.list 								{ width: var(--content-width); }
+table.details							{ width: var(--content-width); }
+table.footer							{ width: var(--content-width); }
+
+/* リスト */
+table.list td.songname					{ text-align: center; }
+table.list td.unitname					{ text-align: center; }
+table.list td.idolname					{ text-align: center; }
+table.list td.artist					{ text-align: center; }
+table.list td.time						{ text-align: center; }
+table.list td.difficulty				{ text-align: center; }
+table.list td.level						{ text-align: center; }
+table.list td.notes						{ text-align: center; }
+table.list td.navi						{ text-align: center; }
+table.list td.obtain					{ text-align: center; }
+table.list td.implement					{ text-align: center; }
+table.list td.index						{ text-align: center; }
+table.list td.star						{ text-align: center; }
+table.list td.rarity					{ text-align: center; }
+table.list td.kind						{ text-align: center; }
+table.list td.status					{ text-align: center; }
+table.list td.datetime					{ text-align: center; }
+table.list td.point						{ text-align: center; }
+
+table.details td.star					{ text-align: center; }
+table.details td.rarity					{ text-align: center; }
+table.details td.level					{ text-align: center; }
+table.details td.notes					{ text-align: center; }
+table.details td.scorerank				{ text-align: center; }
+table.details td.rhythm-image			{ text-align: center; }
+table.details td.status					{ text-align: center; }
+table.details td.cost					{ text-align: center; }
+table.details td.pp						{ text-align: center; }
+table.details td.evolution				{ text-align: center; }
+table.details td.implement				{ text-align: center; }
+table.details td.good-schedule			{ text-align: center; }
+table.details td.rate					{ text-align: center; }
+table.details td.exp					{ text-align: right; }
+table.details td.filter					{ text-align: center; }
+table.details td.rank					{ text-align: center; }
+
+
+/*----- 共通 -----*/
+span.star.solid							{ color: #f66; margin: 0px; padding: 0px; letter-spacing: -3px; }
+span.star.empty							{ color: #aaa; margin: 0px; padding: 0px; letter-spacing: -3px; }
+
+div.reward.rewarditem					{ display: flex;}
+span.reward.amount						{}
+span.reward.itemname					{ text-align: left;	flex-grow: 1;}
+
+td.star-value							{ font-weight: bold; }
+td.star-value.star-1					{ color: #aaa; }
+td.star-value.star-2					{ color: #22f; }
+td.star-value.star-3					{ color: #f00; }
+
+td.rarity								{ font-weight: bold; }
+td.rarity.rarity-1						{ color: #aaa; }
+td.rarity.rarity-2						{ color: #22f; }
+td.rarity.rarity-3						{ color: #f00; }
+
+span.rarity-1							{ color: #000; }
+span.rarity-2							{ color: #22f; }
+span.rarity-3							{ color: #f00; }
+
+td.dark-text							{ color: #000; }
+td.light-text							{ color: #fff; }
+.dark-text								{ color: #000; }
+.light-text								{ color: #fff; }
+
+/* フィルター */
+div.filter {
+	margin:		    4px 4px 5px 5px;
+	font-size:		var(--font-size-sss);
+	width:			var(--content-width);
+}
+
+div.filter div							{ display: inline-block; margin: 0px; }
+div.filter div.star-checker				{ width: 217px; /* background: #eef; */ }
+div.filter div.rarity-checker			{ width: 217px; /* background: #eef; */ }
+div.filter div.obtain-checker			{ width: 291px; /* background: #efe; */ }
+div.filter div.disp-selector			{ width: 252px; /* background: #eef; */ }
+div.filter div.unit-checker				{ width: 780px; }
+div.filter label.star-check   span		{ width: 54px; }
+div.filter label.rarity-check span		{ width: 54px; }
+div.filter label.obtain-check span		{ width: 80px; }
+div.filter label.unit-check   span		{ width: 80px; }
+div.filter label.disp-check   span		{ width: 80px; }
+div.filter label input					{ display: none; }
+div.filter label						{ margin: 0px; padding:	0px; }
+
+div.filter label span {
+	display:		inline-block;
+
+    font-size:		var(--font-size-sss);
+	text-align:		center;
+    border:			1px;
+    border-radius:	2px;
+	margin:			0px;
+	padding:		10px 5px 10px 5px;
+
+    color:			#888;
+    background:		#ddd;
+    border:			1px solid #888;
+}
+
+div.filter label.checker input:checked + span {
+    color:			#000;
+    background:		#fcc;
+    border:			1px solid #000;
+}
+
+div.filter label.selector input:checked + span {
+    color:			#000;
+    background:		#bfb;
+    border:			1px solid #000;
+}
+
+/*----- 基本構造 -----*/
 /* ヘッダ */
-table.head						{ width: 780px; }
-table.head						{ border-style: none; }
-td.head.title					{ width: 60%; border-style: none; }
-td.head.title.link-1			{ width: 80%; border-style: none; }
-span.head.page-title			{ font-size: 14pt; font-weight: bold; color: #55C; }
-td.head.link					{ width: 20%; text-align: center; }
-td.head.link:hover 				{ width: 20%; text-align: center; }
-td.head.link					{ background-color: var(--bg-color); }
-td.head.link:hover 				{ background-color: var(--hover-color); }
-a.head.link	 					{ display: block; }
+table.head								{ border-style: none; }
+td.head.title							{ width: 60%; border-style: none; }
+td.head.title.link-1					{ width: 80%; border-style: none; }
+td.head.link							{ width: 20%; text-align: center; }
+td.head.link:hover 						{ width: 20%; text-align: center; }
+td.head.link							{ background-color: var(--bg-color); }
+td.head.link:hover 						{ background-color: var(--hover-color); }
+span.head.page-title					{ font-size: 14pt; font-weight: bold; color: #55C; }
+span.page-title							{ white-space: nowrap; }
+a.head.link	 							{ display: block; }
 
 span.head.game-title
 {
-	font-size:			18pt;
-	font-weight:		bold;
-	background:			linear-gradient(90deg, #99f, #f99);
-	color:				var(--color);
+	font-size:				18pt;
+	font-weight:			bold;
+	background:				linear-gradient(90deg, #99f, #f99);
+	color:					var(--color);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -230,54 +333,51 @@ a.head.link.category {
 }
 
 /* フッタ */
-table.footer					{ width: 780px; }
-td.footer						{ border-style: none; }
+td.footer								{ border-style: none; }
 div.footer {
-	text-align:			right;
-	margin-top:			0.5em;
+	text-align:				right;
+	margin-top:				0.5em;
 }
 
-/* 更新 */
-table.update					{ width: 1000px; }
-h2.update.month					{ width: 992px; }
-th.update						{ width: 10%; }
-td.update						{ width: 55%; }
-td.update.id					{ width: 35%; word-wrap: break-word; }
+/*----- 更新 -----*/
+h2.update.month							{ width: var(--head-width); }
+h2.update.month							{ background: linear-gradient(90deg, #fff, #ccf) }
+h2.update.month							{ border-bottom: 1px solid #88f; }
+h2.update.month							{ border-left:   2px solid #88f; }
+h2.update.month							{ padding-left:  6px; }
+h2.update.month							{ font-size: 16px; margin-top: 20px; margin-bottom: 0px; }
+h3.update.day							{ font-size: 14px; margin-top: 10px; margin-bottom: 0px; }
+
+table.update th							{ width: 10%; }
+table.update td							{ width: 55%; }
+table.update td.id						{ width: 35%; word-wrap: break-word; }
 
 /* ID非表示 */
-table.update					{ width: 780px; }
-h2.update.month					{ width: 772px; }
-th.update						{ width: 15%; }
-td.update						{ width: 85%; }
-td.update.id					{ width: 0%; display: none; }
-/**/
+table.update th.update					{ width: 15%; }
+table.update td.update					{ width: 85%; }
+table.update td.update.id				{ width: 0%; display: none; }
 
-h2.update.month					{ background: linear-gradient(90deg, #fff, #ccf) }
-h2.update.month					{ border-bottom: 1px solid #88f; }
-/*h2.update.month				{ border-top:    1px solid #88f; }*/
-h2.update.month					{ border-left:   2px solid #88f; }
-/*h2.update.month				{ border-right:  2px solid #88f; }*/
-h2.update.month					{ padding-left:  6px; }
-h2.update.month					{ font-size: 16px; margin-top: 20px; margin-bottom: 0px; }
-h3.update.day					{ font-size: 14px; margin-top: 10px; margin-bottom: 0px; }
+span.update.pidol.star.label			{ width: 32px; }
+span.update.support.rarity.label		{ width: 40px; }
+span.update.cloth.label					{ width: 50px; }
+span.update.gasha.pickup-p				{ color: #44f; font-size: 12px; font-weight: bold; }
+span.update.gasha.pickup-s				{ color: #f66; font-size: 12px; font-weight: bold; }
+span.update.pidol.gasha					{ color: #44f; font-size: 12px; font-weight: bold; }
+span.update.schara.gasha				{ color: #f66; font-size: 12px; font-weight: bold; }
+span.update.support.gasha				{ color: #f66; font-size: 12px; font-weight: bold; }
+span.update.pidol.event					{ color: #44f; font-size: 12px; font-weight: bold; }
+span.update.schara.season-pass			{ color: #2b2; font-size: 12px; font-weight: bold; }
+span.update.obtain.season-pass			{ color: #2b2; font-size: 12px; font-weight: bold; }
 
-span.update.pidol.star.label	{ width: 32px; }
-span.update.support.rarity.label { width: 40px; }
-span.update.cloth.label			{ width: 50px; }
-span.update.gasha.pickup-p		{ color: #44f; font-size: 12px; font-weight: bold; }
-span.update.gasha.pickup-s		{ color: #f66; font-size: 12px; font-weight: bold; }
-span.update.pidol.gasha			{ color: #44f; font-size: 12px; font-weight: bold; }
-span.update.support.gasha		{ color: #f66; font-size: 12px; font-weight: bold; }
-span.update.obtain.season-pass	{ color: #2b2; font-size: 12px; font-weight: bold; }
 
-th.update.gasha					{ background-color: #fee; }
-th.update.event					{ background-color: #ffe; }
-th.update.song					{ background-color: #efe; }
-th.update.pidol					{ background-color: #eff; }
-th.update.support				{ background-color: #eef; }
-th.update.clothes				{ background-color: #fef; }
-th.update.season-pass			{ background-color: #beb; }
-th.update.streaming				{ background-color: #eee; }
+table.update th.gasha					{ background-color: #fee; }
+table.update th.event					{ background-color: #ffe; }
+table.update th.song					{ background-color: #efe; }
+table.update th.pidol					{ background-color: #eff; }
+table.update th.support					{ background-color: #eef; }
+table.update th.clothes					{ background-color: #fef; }
+table.update th.season-pass				{ background-color: #beb; }
+table.update th.streaming				{ background-color: #eee; }
 
 a.update.streaming.youtube {
 	display:			inline;
@@ -302,160 +402,112 @@ span.update.label {
 /*	color:				red;	*/
 }
 
-/* リンク無効化 */
-/*
-a.update
-{
-	pointer-events:		none;
-	text-decoration:	none;
-	color:				var(--color);
-}
-*/
+/*----- 楽曲・譜面 -----*/
+/* 楽曲・譜面/リスト */
+table.list.rhythm.navi					{ margin-top: 1em; }
 
-a.invalid
-{
-	pointer-events:		none;
-	text-decoration:	none;
-	color:				var(--color);
-}
-
-/* 譜面 */
-table.list.rhythm 		{ width: 780px; }
-table.list.rhythm.navi 	{ width: 780px; margin-top: 1em; }
-
-th.list.rhythm			{ background-color: #eee; }
-
-th.list.rhythm			{
+table.list.rhythm th	{
 	position:			sticky;
 	top:				-1px;
 /*	top:				27px;	*/
 	z-index:			1;
 }
 
-th.list.rhythm.songname			{ width: 34%; }
-th.list.rhythm.unitname			{ width: 14%; }
-th.list.rhythm.time				{ width: 8%; }
-th.list.rhythm.easy				{ width: 8%; background-color: var(--ea-bg); }
-th.list.rhythm.normal			{ width: 8%; background-color: var(--no-bg); }
-th.list.rhythm.hard				{ width: 8%; background-color: var(--ha-bg); }
-th.list.rhythm.expert			{ width: 8%; background-color: var(--ex-bg); }
-th.list.rhythm.master			{ width: 8%; background-color: var(--ma-bg); }
-th.list.rhythm					{ font-size: 15px; }
+table.list.rhythm td.navi.rhythm-update	{ width: 25%; }
+table.list.rhythm td.navi.rhythm-level	{ width: 20%; }
+table.list.rhythm td.navi.rhythm-notes	{ width: 20%; }
 
-td.list.rhythm.songname			{ padding-top: 0.3em; padding-bottom: 0.3em; }
-td.list.rhythm.songname			{ text-align: center; }
-td.list.rhythm.unitname			{ text-align: center; }
-td.list.rhythm.time				{ text-align: center; }
-td.list.rhythm.easy				{ text-align: center; background-color: var(--ea-bg2); }
-td.list.rhythm.normal			{ text-align: center; background-color: var(--no-bg2); }
-td.list.rhythm.hard				{ text-align: center; background-color: var(--ha-bg2); }
-td.list.rhythm.expert			{ text-align: center; background-color: var(--ex-bg2); }
-td.list.rhythm.master			{ text-align: center; background-color: var(--ma-bg2); }
-td.list.rhythm					{ font-size: 16px; }
-td.list.rhythm.songname			{ font-size: 16px; }
-td.list.rhythm.unitname			{ font-size: 16px; }
+table.list.rhythm th.difficulty			{ font-size: var(--font-size-s); }
+table.list.rhythm th.songname			{ width: 32.5%; }
+table.list.rhythm th.unitname			{ width: 13.5%; }
+table.list.rhythm th.time				{ width: 9%; }
+table.list.rhythm th.difficulty			{ width: (45% / 5); }
+table.list.rhythm th.easy				{ background-color: var(--ea-bg); }
+table.list.rhythm th.normal				{ background-color: var(--no-bg); }
+table.list.rhythm th.hard				{ background-color: var(--ha-bg); }
+table.list.rhythm th.expert				{ background-color: var(--ex-bg); }
+table.list.rhythm th.master				{ background-color: var(--ma-bg); }
+table.list.rhythm td.songname			{ padding-top: 0.3em; padding-bottom: 0.3em; }
+table.list.rhythm td.easy				{ background-color: var(--ea-bg2); }
+table.list.rhythm td.normal				{ background-color: var(--no-bg2); }
+table.list.rhythm td.hard				{ background-color: var(--ha-bg2); }
+table.list.rhythm td.expert				{ background-color: var(--ex-bg2); }
+table.list.rhythm td.master				{ background-color: var(--ma-bg2); }
 
-td.list.rhythm.easy:hover 		{ background-color: #fff; }
-td.list.rhythm.normal:hover 	{ background-color: #fff; }
-td.list.rhythm.hard:hover 		{ background-color: #fff; }
-td.list.rhythm.expert:hover 	{ background-color: #fff; }
-td.list.rhythm.master:hover 	{ background-color: #fff; }
-td.list.rhythm.songname:hover 	{ background-color: #fee; }
+table.list.rhythm td.navi	 			{ border-style: none; }
 
-td.list.rhythm.navi 			{ text-align: center; }
-td.list.rhythm.navi	 			{ border-style: none; }
+table.list.rhythm td.difficulty:hover 	{ background-color: var(--hover-hilight2); }
+table.list.rhythm td.songname:hover 	{ background-color: var(--hover-hilight1); }
+table.list.rhythm td.navi.link:hover 	{ background-color: var(--hover-hilight1); }
 
-td.list.rhythm.navi.link		{ background-color: #fff; }
-td.list.rhythm.navi.link:hover 	{ background-color: #fee; }
-/*tr:hover 	{ background-color: #fee; }	*/
+a.rhythm	 							{ display: block; }
+a.song	 								{ display: block; }
 
-a.rhythm	 					{ display: block; }
-a.song	 						{ display: block; }
+/* 楽曲・譜面/詳細 */
+table.details.song 						{ margin-top: 1em; }
 
-/* 曲 */
-span.head.page-title.songname	{ font-size: 20px; font-weight: bold; color: #000; }
-span.head.page-title			{ white-space: nowrap; }
+table.details.song th.songname			{ width: 16.6%; }
+table.details.song th.difficulty		{ width: 16.6%; }
 
-table.details.song 				{ width: 780px; }
-table.details.song 				{ margin-top: 1em; }
-th.details.song 				{ width: 16.6%; }
-th.details.song.update 			{ background: #eee; }
-th.details.song.difficulty 		{ width: 16.6%; }
-th.details.song.difficulty		{ text-align: center; }
-td.details.song.level			{ text-align: center; }
-td.details.song.notes			{ text-align: center; }
-td.details.song 				{ padding-left: 5px; padding-right: 5px; }
+table.details.song th.easy				{ background-color: var(--ea-bg) }
+table.details.song th.normal			{ background-color: var(--no-bg) }
+table.details.song th.hard				{ background-color: var(--ha-bg) }
+table.details.song th.expert			{ background-color: var(--ex-bg) }
+table.details.song th.master			{ background-color: var(--ma-bg) }
 
-th.details.song.easy			{ background-color: var(--ea-bg) }
-th.details.song.normal			{ background-color: var(--no-bg) }
-th.details.song.hard			{ background-color: var(--ha-bg) }
-th.details.song.expert			{ background-color: var(--ex-bg) }
-th.details.song.master			{ background-color: var(--ma-bg) }
+table.details.song td.easy				{ background-color: var(--ea-bg2); }
+table.details.song td.normal			{ background-color: var(--no-bg2); }
+table.details.song td.hard				{ background-color: var(--ha-bg2); }
+table.details.song td.expert			{ background-color: var(--ex-bg2); }
+table.details.song td.master			{ background-color: var(--ma-bg2); }
 
-td.details.song.easy			{ text-align: center; background-color: var(--ea-bg2); }
-td.details.song.normal			{ text-align: center; background-color: var(--no-bg2); }
-td.details.song.hard			{ text-align: center; background-color: var(--ha-bg2); }
-td.details.song.expert			{ text-align: center; background-color: var(--ex-bg2); }
-td.details.song.master			{ text-align: center; background-color: var(--ma-bg2); }
+table.details.song td.rhythm-image 		{ padding-top: 0.5em; padding-bottom: 0.5em; }
+table.details.song td.rhythm-image:hover { background-color: #fff; }
 
-td.details.rhythm-image:hover 	{ background-color: #fff; }
-td.details.rhythm-image 		{ padding-top: 0.5em; padding-bottom: 0.5em; }
-td.list.rhythm.navi.rhythm-update { width: 25%; }
-td.list.rhythm.navi.rhythm-level { width: 20%; }
-td.list.rhythm.navi.rhythm-notes { width: 20%; }
-a.details.rhythm-image:hover 	{ display: block; }
+a.details.rhythm-image:hover 			{ display: block; }
 
 span.details.song.score
 {
-	display: inline-block;
-	width: 5em;
-	text-align: right;
+	display:		inline-block;
+	width:			5em;
+	text-align:		right;
 }
 
-/* アイドル一覧 */
-table.list.idol					{ width: 780px; }
-table.list.idol					{ margin-top: 1em; }
-th.list.idol					{ text-align: center; }
-th.list.idol.unitname			{ width: 17%; }
-th.list.idol.idolname			{ width: 17%; }	/* 34 */
-th.list.idol.birthplace			{ width: 12%; }	/* 46 */
-th.list.idol.age				{ width: 8%; }  /* 54 */
-th.list.idol.birthday			{ width: 13%; }	/* 66 */
-th.list.idol.height				{ width: 10%; }	/* 76 */
-th.list.idol.weight				{ width: 8%; }	/* 85 */
-th.list.idol.bust				{ width: 5%; }
-th.list.idol.waist				{ width: 5%; }
-th.list.idol.hip				{ width: 5%; }	/* 100 */
-td.list.idol					{ text-align: center; }
-
-table.list.produce				{ width: 780px; }
-table.list.support				{ width: 780px; }
-table.list.cloth				{ width: 780px; }
-
-div.list.idol.idolname {
-	display: flex;
-/*	justify-content: space-between;
-	width: 200px;*/
+span.live.livespac {
+	display:		inline-block;
+    border:			1px solid var(--border-color);
+    padding:		0px 5px 0px 5px;
+    border-radius:	5px;
+	margin:			3px 3px 3px 3px;
 }
 
-span.list.idol.color {
-}
+span.live.livespac.songparts			{ background: #fee; }
+span.live.livespac.focus				{ background: #fee; }
+span.live.livespac.live-3d				{ background: #fee; }
+span.live.livespac.live-2d				{ background: #fee; }
 
-span.list.idol.idolname {
-	text-align: center;
-	flex-grow: 1;
-}
+/*----- ユニット・アイドル -----*/
+/* ユニット・アイドル/リスト */
+table.list.idol							{ margin-top: 1em; }
+table.list.idol th.unitname				{ width: 17%; }
+table.list.idol th.idolname				{ width: 17%; }
+table.list.idol th.birthplace			{ width: 12%; }
+table.list.idol th.age					{ width: 8%; }
+table.list.idol th.birthday				{ width: 13%; }
+table.list.idol th.height				{ width: 10%; }
+table.list.idol th.weight				{ width: 8%; }
+table.list.idol th.bust					{ width: 5%; }
+table.list.idol th.waist				{ width: 5%; }
+table.list.idol th.hip					{ width: 5%; }
+table.list.idol td						{ text-align: center; }
 
-td {
-	position: relative;
-}
+table.list.idol div.idolname			{ display: flex; }
+table.list.idol span.color				{ }
+table.list.idol span.idolname			{ flex-grow: 1; }
 
-a.idol	 						{ display: block; }
-a.fill {
-	display:					block;
-/*	background-color:			#dfd;	*/
-}
-a.fill2 {
+table.list.idol a.idol	 				{ display: block; }
+table.list.idol a.fill					{ display: block; }
+table.list.idol a.fill2 {
 	position:					absolute;
 	width:						100%;
 	height:						100%;
@@ -466,315 +518,297 @@ a.fill2 {
 	align-items:				center;
 /*	background-color:			#fdd;	*/
 }
-/*td.list.idol.unitname:hover 	{ background-color: #fee; }*/
-td.list.idol.unitname:hover 	{ background-color: #fee; }
-td.list.idol.idolname:hover 	{ background-color: #fee; }
 
-/* アイドル */
-span.head.page-title.idolname	{ font-size: 20px; font-weight: bold; color: #000; }
+/*td.list.idol.unitname:hover 			{ background-color: var(--hover-hilight1); }	*/
+table.list.idol td.unitname:hover 		{ background-color: var(--hover-hilight1); }
+table.list.idol td.idolname:hover 		{ background-color: var(--hover-hilight1); }
 
-table.details.idol				{ width: 780px; table-layout: fixed; }
-table.details.idol				{ margin-top: 1em; }
-th.details.idol					{ width: 14.28%; }
-th.details.idol.color			{ width: 14.28%; }
-th.details.idol.idolname		{ width: 28.56%; }
-th.details.idol.phonetics		{ width: 28.56%; }
-th.details.idol.cv				{ width: 28.56%; }
-td.details.idol					{ text-align: center; }
-td.details.idol.hobby			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
-td.details.idol.ability			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
-td.details.idol.desc			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+/* ユニット・アイドル/アイドル詳細 */
+table.details.idol						{ margin-top: 1em; }
+table.details.idol th.idol.color		{ width: 14.28%; }
+table.details.idol th.idolname			{ width: 28.56%; }
+table.details.idol th.phonetics			{ width: 28.56%; }
+table.details.idol th.cv				{ width: 28.56%; }
+table.details.idol td					{ text-align: center; }
+table.details.idol td.hobby				{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+table.details.idol td.ability			{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+table.details.idol td.desc				{ text-align: left; padding-left: 0.5em; padding-right: 0.5em; }
+table.list.produce td.obtain			{ text-align: left; }
+table.list.support td.obtain			{ text-align: left; }
+table.list.costume td.obtain			{ text-align: left; }
 
-span.star.solid					{ color: #f66; margin: 0px; padding: 0px; letter-spacing: -3px; }
-span.star.empty					{ color: #aaa; margin: 0px; padding: 0px; letter-spacing: -3px; }
+table.list.produce						{ margin-top: 0em; }
+table.list.produce th.star				{ width: 10%; }
+table.list.produce th.cardname			{ width: 36%; }
+table.list.produce th.implement			{ width: 14%; }
+table.list.produce th.obtain			{ width: 40%; }
 
-h4.list							{ margin-top: 0.5em; margin-bottom: 0px; }
+/* ユニット・アイドル/詳細/プロデュース */
+table.list.support						{ margin-top: 0em; }
+table.list.support th.rarity			{ width: 10%; }
+table.list.support th.cardname			{ width: 36%; }
+table.list.support th.implement			{ width: 14%; }
+table.list.support th.obtain			{ width: 40%; }
 
-table.list.produce				{ margin-top: 0em; }
-th.list.produce.star			{ width: 10%; }
-th.list.produce.cardname		{ width: 36%; }
-th.list.produce.implement		{ width: 14%; }
-th.list.produce.obtain			{ width: 40%; }
-td.list.produce.implement		{ text-align: center; }
+/* ユニット・アイドル/詳細/衣装 */
+table.list.costume th.kind				{ width: 6%; }
+table.list.costume th.costumename		{ width: 35%; }
+table.list.costume th.implement			{ width: 10%; }
+table.list.costume th.obtain			{ width: 49%; }
+table.list.costume td					{ font-size: var(--font-size-sx); }
 
-table.list.support				{ margin-top: 0em; }
-th.list.support.rarity			{ width: 10%; }
-th.list.support.cardname		{ width: 36%; }
-th.list.support.implement		{ width: 14%; }
-th.list.support.obtain			{ width: 40%; }
-td.list.support.rarity			{ text-align: center; }
-td.list.support.implement		{ text-align: center; }
+/* ユニット・ユニット/ユニット詳細 */
+table.details.unit						{ margin-top: 1em; }
+div.idolcolor							{ display: block; margin: 0px; padding: 0px; }
+div.unitcolor							{ margin-top: 0.8em; margin-bottom: 0.8em; }
+div.details.unit.unitcolor				{ display: block; padding-top: 15px; padding-bottom: 15px; }
 
-table.list.costume				{ margin-top: 0em; }
-th.list.costume.kind			{ width: 6%; }
-th.list.costume.costumename		{ width: 35%; }
-th.list.costume.implement		{ width: 10%; }
-th.list.costume.obtain			{ width: 49%; }
-td.list.costume.kind			{ text-align: center; }
-td.list.costume.implement		{ text-align: center; }
-td.list.hairstyle.kind			{ text-align: center; }
-td.list.hairstyle.implement		{ text-align: center; }
-td.list.accessory.kind			{ text-align: center; }
-td.list.accessory.implement		{ text-align: center; }
-td.list.cloth					{ font-size: 12px; }
+td.details.unit							{ text-align: center; }
+td.details.unit.unitname				{ text-align: left; }
+td.details.unit.kana					{ padding: 0px; }
 
-td.details.idol.color.dark-text		{ color: #000; }
-td.details.idol.color.light-text	{ color: #fff; }
+table.details.unit td.unitcolor			{ width: 12%; }
+table.details.unit td.unitname			{ width: 88%; padding-left: 10px; font-size: var(--font-size-ll); }
+table.details.unit td.idol-col-1-2		{ width: (88% / 2); }
+table.details.unit td.idol-col-2-2		{ width: (88% / 2); }
+table.details.unit td.idol-col-1-3		{ width: (88% / 3); }
+table.details.unit td.idol-col-2-3		{ width: (88% / 3); }
+table.details.unit td.idol-col-3-3		{ width: (88% / 3); }
+table.details.unit td.idol-col-1-4		{ width: (88% / 4); }
+table.details.unit td.idol-col-2-4		{ width: (88% / 4); }
+table.details.unit td.idol-col-3-4		{ width: (88% / 4); }
+table.details.unit td.idol-col-4-4		{ width: (88% / 4); }
+table.details.unit td.idol-col-1-5		{ width: (88% / 5); }
+table.details.unit td.idol-col-2-5		{ width: (88% / 5); }
+table.details.unit td.idol-col-3-5		{ width: (88% / 5); }
+table.details.unit td.idol-col-4-5		{ width: (88% / 5); }
+table.details.unit td.idol-col-5-5		{ width: (88% / 5); }
 
-/*
-a.unit
-{
-	pointer-events:		none;
-	text-decoration:	none;
-	color:				var(--color);
-}
-*/
+table.list.unit.song th.songname		{ width: 27%; }
+table.list.unit.song th.unitname		{ width: 13%; }
+table.list.unit.song th.lyricist		{ width: (60% / 3); }
+table.list.unit.song th.composer		{ width: (60% / 3); }
+table.list.unit.song th.arranger		{ width: (60% / 3); }
 
-span.live.livespac {
-	display:		inline-block;
-    border:			1px solid var(--border-color);
-    padding:		0px 5px 0px 5px;
-    border-radius:	5px;
-	margin:	3px 3px 3px 3px;
-}
-
-span.live.livespac.songparts	{ background: #fee; }
-span.live.livespac.focus		{ background: #fee; }
-span.live.livespac.live-3d		{ background: #fee; }
-span.live.livespac.live-2d		{ background: #fee; }
-
-a.invalid:hover 				{ background-color: #fff; }
-td.invalid:hover 				{ background-color: fff; }
-span.invalid:hover 				{ background-color: fff; }
-
-/* ストーリー */
-table.list.story				{ font-size: 15px; }
-
-/*h4.list.story					{ margin-top: 0px; }*/
-h4.list.story					{ margin-bottom: 0px; }
-table.list.story				{ width: 780px; }
-th.list.story.capter			{ width: 8%;  text-align: center; background-color: #eee; }
-td.list.story.title				{ width: 30%; padding-left: 5px;  background-color: #eee; }
-td.list.story.release			{ width: 12%; text-align: center; background-color: #eee; }
-td.list.story.point				{ width: 12%; text-align: center; background-color: #eee; }
-td.list.story.summary			{ width: 50%; padding-left: 5px; }
-td.list.story.idols				{ padding-left: 5px; }
-
-th.list.story.capter			{ width: 8%; }
-th.list.story.title				{ width: 30%; }
-th.list.story.point				{ width: 12%; }
-th.list.story.summary			{ width: 50%; }
-
-th.list.story.capter.unit-1		{ background-color: var(--unit-1); }
-th.list.story.capter.unit-2		{ background-color: var(--unit-2); color: white; }
-th.list.story.capter.unit-3		{ background-color: var(--unit-3); color: black; }
-th.list.story.capter.unit-4		{ background-color: var(--unit-4); color: black; }
-th.list.story.capter.unit-5		{ background-color: var(--unit-5); color: white; }
-th.list.story.capter.unit-6		{ background-color: var(--unit-6); color: white; }
-th.list.story.capter.unit-7		{ background-color: var(--unit-7); color: white; }
-th.list.story.capter.unit-8		{ background-color: var(--unit-8); color: white; }
-
-table.list.story.idol			{ text-align: left; margin-top: 0em; }
-td.list.story.idol				{ text-align: left; }
-td.list.story.event.point		{ text-align: right; padding-right: 10px; }
-
-th.list.story.capter.idol-1		{ background-color: var(--idol-1); }
-th.list.story.capter.idol-2		{ background-color: var(--idol-2); color: white; }
-th.list.story.capter.idol-3		{ background-color: var(--idol-3); }
-th.list.story.capter.idol-4		{ background-color: var(--idol-4); }
-th.list.story.capter.idol-5		{ background-color: var(--idol-5); color: white; }
-th.list.story.capter.idol-6		{ background-color: var(--idol-6); color: white; }
-th.list.story.capter.idol-7		{ background-color: var(--idol-7); color: white; }
-th.list.story.capter.idol-8		{ background-color: var(--idol-8); }
-th.list.story.capter.idol-9		{ background-color: var(--idol-9); color: white; }
-th.list.story.capter.idol-10	{ background-color: var(--idol-10); color: white; }
-th.list.story.capter.idol-11	{ background-color: var(--idol-11); }
-th.list.story.capter.idol-12	{ background-color: var(--idol-12); }
-th.list.story.capter.idol-13	{ background-color: var(--idol-13); }
-th.list.story.capter.idol-14	{ background-color: var(--idol-14); }
-th.list.story.capter.idol-15	{ background-color: var(--idol-15); }
-th.list.story.capter.idol-16	{ background-color: var(--idol-16); }
-th.list.story.capter.idol-17	{ background-color: var(--idol-17); color: white; }
-th.list.story.capter.idol-18	{ background-color: var(--idol-18); }
-th.list.story.capter.idol-19	{ background-color: var(--idol-19); }
-th.list.story.capter.idol-20	{ background-color: var(--idol-20); }
-th.list.story.capter.idol-21	{ background-color: var(--idol-21); color: white; }
-th.list.story.capter.idol-22	{ background-color: var(--idol-22); color: white; }
-th.list.story.capter.idol-23	{ background-color: var(--idol-23); }
-th.list.story.capter.idol-24	{ background-color: var(--idol-24); }
-th.list.story.capter.idol-25	{ background-color: var(--idol-25); color: white; }
-th.list.story.capter.idol-26	{ background-color: var(--idol-26); color: white; }
-th.list.story.capter.idol-27	{ background-color: var(--idol-27); }
-th.list.story.capter.idol-28	{ background-color: var(--idol-28); }
-
-/* ユニット */
-table.details.unit				{ width: 780px; }
-table.details.unit				{ margin-top: 1em; }
-div.idolcolor					{ display: block; margin: 0px; padding: 0px; }
-div.unitcolor					{ margin-top: 0.8em; margin-bottom: 0.8em; }
-.dark-text						{ color: #000; }
-.light-text						{ color: #fff; }
-
-div.details.unit.unitcolor		{ display: block; padding-top: 15px; padding-bottom: 15px; }
-
-td.details.unit					{ text-align: center; }
-td.details.unit.unitcolor		{ width: 12%; }
-td.details.unit.unitname		{ width: 88%; padding-left: 10px; }
-/*td.details.unit.unitname		{ text-align: left; }*/
-td.details.unit.kana			{ padding: 0px; }
-
-td.idol-col-1-2					{ width: (88% / 2); }
-td.idol-col-2-2					{ width: (88% / 2); }
-td.idol-col-1-3					{ width: (88% / 3); }
-td.idol-col-2-3					{ width: (88% / 3); }
-td.idol-col-3-3					{ width: (88% / 3); }
-td.idol-col-1-4					{ width: (88% / 4); }
-td.idol-col-2-4					{ width: (88% / 4); }
-td.idol-col-3-4					{ width: (88% / 4); }
-td.idol-col-4-4					{ width: (88% / 4); }
-td.idol-col-1-5					{ width: (88% / 5); }
-td.idol-col-2-5					{ width: (88% / 5); }
-td.idol-col-3-5					{ width: (88% / 5); }
-td.idol-col-4-5					{ width: (88% / 5); }
-td.idol-col-5-5					{ width: (88% / 5); }
-
-table.list.song.unit			{ width: 780px; }
-th.list.song.songname			{ width: 27%; }
-th.list.song.unitname			{ width: 13%; }
-th.list.song.lyricist			{ width: (60% / 3); }
-th.list.song.composer			{ width: (60% / 3); }
-th.list.song.arranger			{ width: (60% / 3); }
-td.list.song.unitname			{ text-align: center; }
-
-td.list.song {
+table.list.unit.song td {
 	word-break:		keep-all;
 	overflow-wrap:	break-word;
 }
 
-/*
-td.list.song.lyricist			{ font-size: 14px; }
-td.list.song.composer			{ font-size: 14px; }
-td.list.song.arranger			{ font-size: 14px; }
-*/
+/*----- Ｐアイドル -----*/
+th.status.vo							{ background-color: var(--vo-bg); }
+th.status.da							{ background-color: var(--da-bg); }
+th.status.vi							{ background-color: var(--vi-bg); }
+th.status.me							{ background-color: var(--me-bg); }
+td.status.vo							{ background-color: var(--vo-bg2); }
+td.status.da							{ background-color: var(--da-bg2); }
+td.status.vi							{ background-color: var(--vi-bg2); }
+td.status.me							{ background-color: var(--me-bg2); }
 
-/* ガシャ */
-table.list.gasha				{ width: 780px; }
-th.list.gasha.id				{ width: 22%; }
-th.list.gasha.resource-id		{ width: 15%; }
+/* Ｐアイドル/リスト */
+table.list.pidol th.index				{ width: 5%; }
+table.list.pidol th.star				{ width: 4%; }
+table.list.pidol th.cardname			{ width: 40%; }
+table.list.pidol th.idolname			{ width: 12%; } /* 56 */
+table.list.pidol th.cardname			{ width: 47%; }
+table.list.pidol th.unitname			{ width: 14%; } /* 44 */
+table.list.pidol th.obtain				{ width: 16%; }
+table.list.pidol th.implement			{ width: 14%; }
+table.list.pidol th.status				{ width: 10.81%; }
+table.list.pidol th.status.type			{ width: 8%; }
+table.list.pidol th.description			{ width: 45.2%; }
 
-th.list.gasha.datetime			{ width: 25%; }
-th.list.gasha.gashakind			{ width: 32%; }
-th.list.gasha.gashaname			{ width: 43%; }
-td.list.gasha.datetime			{ text-align: center; }
-/*th.list.gasha.attr				{ width: 32%; }*/
+table.details.pidol.summary				{ margin-top: 1em; }
+table.details.pidol th.star				{ width: 10%; }
+table.details.pidol th.cardname			{ width: 50%; }
+table.details.pidol th.vocal			{ width: 8%; }
+table.details.pidol th.dance			{ width: 8%; }
+table.details.pidol th.visual			{ width: 8%; }
+table.details.pidol th.mental			{ width: 8%; }
+table.details.pidol th.cost				{ width: 8%; }
+span.evolution							{ font-weight: bold; color: #000; display: block; }
 
-span.rarity-3					{ color: #c00; }
-span.rarity-2					{ color: #f60; }
-span.list.gasha.rate			{ display: none; }
+/* Ｐアイドル/詳細 */
+table.details.pidol.skill th.skillname				{ width: 25%; }
+table.details.pidol.skill th.level					{ width: 5%; }
+table.details.pidol.skill th.pp						{ width: 5%; }
+table.details.pidol.skill th.description			{ width: 60%; }
 
-td.list.gasha.kind				{ font-weight: bold; }
-td.list.gasha.gashakind.produce	{ background-color: #eff; }
-td.list.gasha.gashakind.support	{ background-color: #fee; }
-td.list.gasha.gashaname.produce	{ background-color: #eff; }
-td.list.gasha.gashaname.support	{ background-color: #fee; }
+table.details.pidol.potential.skill th.skillname	{ width: 25%; }
+table.details.pidol.potential.skill th.level		{ width: 5%; }
+table.details.pidol.potential.skill th.description	{ width: 70%; }
 
-h4.list.gasha					{ margin-bottom: 0px; }
+table.details.pidol.idolevent th.eventname			{ width: 28%; }
+table.details.pidol.idolevent th.description		{ width: 72%; }
 
-table.details.gasha				{ width: 780px; }
-th.details.gasha.rarity			{ width: 9%; }
-th.details.gasha.name			{ width: 45%; }
-th.details.gasha.rate			{ width: 9%; }
-th.details.gasha.summary		{ width: 28%; }
+/*----- Ｓキャラ -----*/
+/* Ｓキャラ/リスト */
+table.list.schara th.index				{ width: 5%; }
+table.list.schara th.rarity				{ width: 6%; }
+table.list.schara th.idolname			{ width: 12%; }
+table.list.schara th.cardname			{ width: 45%; }
+table.list.schara th.unitname			{ width: 14%; }
+table.list.schara th.obtain				{ width: 16%; }
+table.list.schara th.implement			{ width: 14%; }
 
-td.details.gasha.rarity			{ text-align: center; }
-td.details.gasha.rate			{ text-align: center; }
+/* Ｓキャラ/詳細 */
+table.details.schara.summary			{ margin-top: 1em; }
+table.details.schara th.rarity			{ width: 8%; }
+table.details.schara th.cardname		{ width: 52%; }
+table.details.schara th.level			{ width: 15%; }
+table.details.schara th.good-schedule	{ width: 25%; }
+table.details.schara th.obtain			{ width: 75%; }
+table.details.schara th.implement		{ width: 25%; }
 
-td.details.gasha.pickup			{ background-color: #efe; }
+table.details.schara.support.effect th.level		{ width: 5%; }
+table.details.schara.support.effect th.effectname	{ width: 35%; }
+table.details.schara.support.effect th.description	{ width: 60%; }
 
-/* ミッション */
-table.list.mission				{ width: 780px; }
-table.details.mission			{ width: 780px; }
-table.details.reward			{ width: 780px; }
+table.details.schara.support.skill th.skillname		{ width: 40%; }
+table.details.schara.support.skill th.description	{ width: 60%; }
+
+table.details.schara.support.event th.eventname		{ width: 28%; }
+table.details.schara.support.event th.description	{ width: 72%; }
+
+/*----- ストーリー -----*/
+table.list.story						{ font-size: var(--font-size-s); }
+table.list.story th.chapter				{ width: 8%;  }
+table.list.story th.title				{ width: 30%; }
+table.list.story td.title				{ width: 30%; }
+table.list.story td.implement			{ width: 12%; }
+table.list.story th.point				{ width: 12%; }
+table.list.story th.summary				{ width: 50%; }
+table.list.story td.summary				{ width: 50%; }
+table.list.story td.point				{ text-align: right; padding-right: 1em; }
+
+table.list.story td.summary				{ padding-left: 5px; }
+table.list.story td.title				{ padding-left: 5px; }
+table.list.story td.idols				{ padding-left: 5px; }
+table.list.story td.title				{ background-color: #eee; }
+table.list.story td.implement			{ background-color: #eee; }
+
+table.list.story th.chapter.unit-1		{ background-color: var(--unit-1); color: black; }
+table.list.story th.chapter.unit-2		{ background-color: var(--unit-2); color: white; }
+table.list.story th.chapter.unit-3		{ background-color: var(--unit-3); color: black; }
+table.list.story th.chapter.unit-4		{ background-color: var(--unit-4); color: black; }
+table.list.story th.chapter.unit-5		{ background-color: var(--unit-5); color: white; }
+table.list.story th.chapter.unit-6		{ background-color: var(--unit-6); color: white; }
+table.list.story th.chapter.unit-7		{ background-color: var(--unit-7); color: white; }
+table.list.story th.chapter.unit-8		{ background-color: var(--unit-8); color: white; }
+
+table.list.story.idol					{ margin-top: 0em; }
+table.list.story.idol td.idol			{ text-align: left; }
+table.list.story.idol td.event.point	{ padding-right: 10px; }
+
+table.list.story th.chapter.idol-1		{ background-color: var(--idol-1); }
+table.list.story th.chapter.idol-2		{ background-color: var(--idol-2); color: white; }
+table.list.story th.chapter.idol-3		{ background-color: var(--idol-3); }
+table.list.story th.chapter.idol-4		{ background-color: var(--idol-4); }
+table.list.story th.chapter.idol-5		{ background-color: var(--idol-5); color: white; }
+table.list.story th.chapter.idol-6		{ background-color: var(--idol-6); color: white; }
+table.list.story th.chapter.idol-7		{ background-color: var(--idol-7); color: white; }
+table.list.story th.chapter.idol-8		{ background-color: var(--idol-8); }
+table.list.story th.chapter.idol-9		{ background-color: var(--idol-9); color: white; }
+table.list.story th.chapter.idol-10		{ background-color: var(--idol-10); color: white; }
+table.list.story th.chapter.idol-11		{ background-color: var(--idol-11); }
+table.list.story th.chapter.idol-12		{ background-color: var(--idol-12); }
+table.list.story th.chapter.idol-13		{ background-color: var(--idol-13); }
+table.list.story th.chapter.idol-14		{ background-color: var(--idol-14); }
+table.list.story th.chapter.idol-15		{ background-color: var(--idol-15); }
+table.list.story th.chapter.idol-16		{ background-color: var(--idol-16); }
+table.list.story th.chapter.idol-17		{ background-color: var(--idol-17); color: white; }
+table.list.story th.chapter.idol-18		{ background-color: var(--idol-18); }
+table.list.story th.chapter.idol-19		{ background-color: var(--idol-19); }
+table.list.story th.chapter.idol-20		{ background-color: var(--idol-20); }
+table.list.story th.chapter.idol-21		{ background-color: var(--idol-21); color: white; }
+table.list.story th.chapter.idol-22		{ background-color: var(--idol-22); color: white; }
+table.list.story th.chapter.idol-23		{ background-color: var(--idol-23); }
+table.list.story th.chapter.idol-24		{ background-color: var(--idol-24); }
+table.list.story th.chapter.idol-25		{ background-color: var(--idol-25); color: white; }
+table.list.story th.chapter.idol-26		{ background-color: var(--idol-26); color: white; }
+table.list.story th.chapter.idol-27		{ background-color: var(--idol-27); }
+table.list.story th.chapter.idol-28		{ background-color: var(--idol-28); }
+
+/*----- ガシャ ----*/
+/* ガシャ/リスト */
+table.list.gasha th.id					{ width: 22%; }
+table.list.gasha th.resource-id			{ width: 15%; }
+table.list.gasha th.datetime			{ width: 25%; }
+table.list.gasha th.gashakind			{ width: 32%; }
+table.list.gasha th.gashaname			{ width: 43%; }
+
+span.list.gasha.rate					{ display: none; }
+
+table.list.gasha td.kind				{ font-weight: bold; }
+table.list.gasha td.gashakind.produce	{ background-color: #eff; }
+table.list.gasha td.gashakind.support	{ background-color: #fee; }
+table.list.gasha td.gashaname.produce	{ background-color: #eff; }
+table.list.gasha td.gashaname.support	{ background-color: #fee; }
+
+/* ガシャ/詳細 */
+table.details.gasha th.rarity			{ width: 9%; }
+table.details.gasha th.name				{ width: 45%; }
+table.details.gasha th.rate				{ width: 9%; }
+table.details.gasha th.summary			{ width: 28%; }
+
+table.details.gasha td.pickup			{ background-color: #efe; }
+
+/*----- ミッション ----*/
+/* ミッション/リスト */
+
+table.list.mission th.seasonname		{ width: 45%; }
+table.list.mission th.dates				{ width: 55%; }
 
 /* ミッション・シーズン */
-table.list.mission				{ margin-top: 1em; }
-table.list.mission				{ margin-top: 0.2em; }
+table.list.mission						{ margin-top: 0em; }
 
-th.list.mission.seasonname		{ width: 45%; }
-th.list.mission.dates			{ width: 55%; }
+table.details.mission.season th.missonname		{ width: 88%; }
+table.details.mission.season th.exp				{ width: 12%; }
+table.details.mission.season th.filter			{ width: 12%; }
+table.details.mission.season td.exp				{ padding-right: 1.2em; }
 
-th.details.mission.missonname	{ width: 88%; }
-th.details.mission.exp			{ width: 12%; }
-th.details.mission.filter		{ width: 12%; }
-td.details.mission.exp			{ padding-right: 1em; text-align: right; }
-td.details.mission.filter		{ text-align: center; }
-
-th.details.mission.reward.rank			{ width: 6%; }
-th.details.mission.reward.rewarditem	{ width: 47.5%; }
-td.details.mission.reward.rank			{ text-align: center; }
-td.details.mission.season				{ font-size: 15px ;}
-
-div.details.mission.reward.rewarditem {
-	display: flex;
-/*	justify-content: space-between;
-	width: 200px;*/
-}
-
-span.details.mission.reward.amount {
-}
-
-span.details.mission.reward.itemname {
-	text-align: left;
-	flex-grow: 1;
-}
-
-h4.mission			{ margin-bottom: 0.1em; }
+table.details.mission.reward th.rank			{ width: 6%; }
+table.details.mission.reward th.rewarditem		{ width: 47.5%; }
+table.details.mission.reward td.rank			{ text-align: center; }
+table.details.mission td.details.mission.season	{ font-size: var(--font-size-s); }
 
 /* 限定 */
 table.details.limited.reward			{ width: 450px; }
 
-/* ショップ */
-table.list.shop					{ width: 780px; }
-table.details.shop				{ width: 780px; }
+/*----- ショップ ----*/
+table.list.shop th.name					{ width: 64%; }
+table.list.shop th.product				{ width: 64%; }
+table.list.shop th.price				{ width: 36%; }
 
-th.list.shop.name				{ width: 64%; }
-th.list.shop.product			{ width: 64%; }
-th.list.shop.price				{ width: 36%; }
+/* アイテム */
+table.details.shop th.name				{ width: 34%; }
+table.details.shop th.product			{ width: 50%; }
+table.details.shop th.price				{ width: 16%; }
 
-th.details.shop.name			{ width: 34%; }
-th.details.shop.product			{ width: 50%; }
-th.details.shop.price			{ width: 16%; }
+/* ジュエルショップ */
+table.details.shop.jewel th.name		{ width: 40%; }
+table.details.shop.jewel th.product		{ width: 20%; }
+table.details.shop.jewel th.price		{ width: 20%; }
+table.details.shop.jewel th.ratio		{ width: 20%; }
 
-th.details.jewel.name			{ width: 40%; }
-th.details.jewel.product		{ width: 20%; }
-th.details.jewel.price			{ width: 20%; }
-th.details.jewel.ratio			{ width: 20%; }
+/* ログイン/シーズンパス */
+/*table.details.shop.pass th.product	{ width: 50%; }*/
+/*table.details.shop.pass th.price		{ width: 16%; }*/
 
-td.details.shop.price			{ text-align: right; }
-td.details.shop.price			{ padding-right: 0.5em; }
-td.details.jewel.ratio			{ text-align: center; }
+table.details td.shop.price				{ text-align: right; }
+table.details td.price					{ padding-right: 0.5em; }
+table.details td.ratio					{ text-align: center; }
 
-div.product {
-	display: flex;
-/*	justify-content: space-between;
-	width: 200px;*/
-}
-
-span.amount {
-}
-
-span.itemname {
-	text-align: left;
-	flex-grow: 1;
-}
+div.product								{ display: flex; }
+span.amount								{ }
+span.itemname							{ text-align: left; flex-grow: 1; }
 
 span.paid.jewel {
 	filter:		contrast(100%) sepia(0%) hue-rotate(210deg);
 }
 
 td.shop.price span.shop.itemname {
-	/*text-align: center; */
-	margin-left: 0.0em;
+	margin-left:	0em;
 }
 
 div.implement {
@@ -788,302 +822,18 @@ h3.shop {
 	margin-bottom:	0.2em;
 }
 
-/*
-span.ticket.bronze {
-	color: transparent;
-	 text-shadow: 0 0 gold;
-}
-*/
+/* 無効化 */
+.removed-cell							{ display: none; }
+.invisible								{ display: none; }
+tr.invisible-row						{ display: none; }
 
-div.invisible	{ display: none; }
+a.invalid:hover 						{ background-color: #fff; }
+td.invalid:hover 						{ background-color: #fff; }
+span.invalid:hover 						{ background-color: #fff; }
 
-/* Ｐアイドル */
-table.list.pidol				{ width: 780px; }
-
-th.list.pidol.index				{ width: 5%; }
-th.list.pidol.star				{ width: 4%; }
-th.list.pidol.cardname			{ width: 40%; }
-th.list.pidol.idolname			{ width: 12%; } /* 56 */
-th.list.pidol.cardname			{ width: 47%; }
-
-th.list.pidol.unitname			{ width: 14%; } /* 44 */
-th.list.pidol.obtain			{ width: 16%; }
-th.list.pidol.implement			{ width: 14%; }
-
-th.list.pidol.status.type		{ width: 8%; }
-th.list.pidol.status.vo			{ width: 10.81%; }
-th.list.pidol.status.da			{ width: 10.81%; }
-th.list.pidol.status.vi			{ width: 10.81%; }
-th.list.pidol.status.me			{ width: 10.81%; }
-
-th.list.pidol.description		{ width: 45.2%; }
-
-td.list.pidol.index				{ text-align: center; }
-td.list.pidol.star				{ text-align: center; }
-td.list.pidol.idolname			{ text-align: center; }
-td.list.pidol.unitname			{ text-align: center; }
-td.list.pidol.obtain			{ text-align: center; }
-td.list.pidol.implement			{ text-align: center; }
-
-td.list.pidol.star				{ font-weight: bold; }
-td.list.pidol.star.star-1		{ color: #aaa; }
-td.list.pidol.star.star-2		{ color: #22f; }
-td.list.pidol.star.star-3		{ color: #f00; }
-
-div.pidol-filter1 {
-	margin:		    4px 3px 4px 3px;
-	font-size:		13px;
-	width:			780px;
-}
-
-div.sharas-filter1 {
-	margin:		    4px 3px 4px 3px;
-	font-size:		13px;
-	width:			780px;
-}
-
-div.star-checker {
-	display:		inline-block;
-/*	margin:		    4px 3px 4px 3px;	*/
-	margin:		    0px;
-	width:			220px;
-/*	background:		#eef; */
-}
-
-div.rarity-checker {
-	display:		inline-block;
-/*	margin:		    4px 3px 4px 3px;	*/
-	margin:		    0px;
-	width:			220px;
-/*	background:		#eef; */
-}
-
-div.obtain-checker {
-	display:		inline-block;
-/*	margin:		    4px 3px 4px 3px;	*/
-	margin:		    0px;
-	width:			295px;
-/*	background:		#efe; */
-}
-
-div.disp-selector {
-	display:		inline-block;
-/*	margin:		    4px 3px 4px 3px;	*/
-	margin:		    0px;
-	width:			252px;
-/*	background:		#eef; */
-}
-
-div.unit-checker {
-	margin:		    4px 3px 4px 3px;
-	width:			780px;
-}
-
-label.checker input {
-    display:		none;
-}
-
-label.checker {
-	margin:		0px;
-	padding:	0px;
-}
-
-label.checker span {
-	width:			80px;
-	display:		inline-block;
-
-    font-size:		13px;
-	text-align:		center;
-    border:			1px;
-    border-radius:	2px;
-	margin:			0px;
-	padding:		10px 5px 10px 5px;
-
-    color:			#888;
-    background:		#ddd;
-    border:			1px solid #888;
-}
-
-label.checker.star-check span {
-	width:			54px;
-	display:		inline-block;
-}
-
-label.checker.rarity-check span {
-	width:			54px;
-	display:		inline-block;
-}
-
-label.checker.obtain-check span {
-	width:			80px;
-	display:		inline-block;
-}
-
-label.checker.unit-check span {
-	width:			80px;
-	display:		inline-block;
-}
-
-label.checker input:checked + span {
-    color:			#000;
-    background:		#fcc;
-    border:			1px solid #000;
-}
-
-label.selector input {
-    display:		none;
-}
-
-label.selector {
-	margin:			0px;
-	padding:		0px;
-}
-
-label.selector span {
-	width:			80px;
-	display:		inline-block;
-
-    font-size:		13px;
-	text-align:		center;
-    border:			1px;
-    border-radius:	2px;
-	margin:			0px;
-	padding:		10px 5px 10px 5px;
-
-    color:			#888;
-    background:		#ddd;
-    border:			1px solid #888;
-}
-
-label.selector.disp-check span {
-	width:			80px;
-	display:		inline-block;
-}
-
-label.selector input:checked + span {
-    color:			#000;
-    background:		#bfb;
-    border:			1px solid #000;
-}
-
-table.details.pidol				{ width: 780px; }
-table.details.pidol.summary		{ margin-top: 1em; }
-th.details.pidol.star			{ width: 10%; }
-th.details.pidol.cardname		{ width: 50%; }
-th.details.pidol.vocal			{ width: 8%; }
-th.details.pidol.dance			{ width: 8%; }
-th.details.pidol.visual			{ width: 8%; }
-th.details.pidol.mental			{ width: 8%; }
-th.details.pidol.cost			{ width: 8%; }
-span.evolution					{ font-weight: bold; color: #000; display: block; }
-
-/*
-span.evolution-4
+a.invalid
 {
-	background:			linear-gradient(0deg, #f90, #a50);
+	pointer-events:		none;
+	text-decoration:	none;
 	color:				var(--color);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
-
-span.evolution-5
-{
-	background:			linear-gradient(0deg, #f4c, #64f);
-	color:				var(--color);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-*/
-
-th.details.pidol.idol-skill.evolution		{ width: 5%; }
-th.details.pidol.idol-skill.skill-name		{ width: 25%; }
-th.details.pidol.idol-skill.level			{ width: 5%; }
-th.details.pidol.idol-skill.pp				{ width: 5%; }
-th.details.pidol.idol-skill.description		{ width: 60%; }
-
-td.details.pidol.idol-skill.evolution		{ text-align: center; }
-td.details.pidol.idol-skill.level			{ text-align: center; }
-td.details.pidol.idol-skill.pp				{ text-align: center; }
-td.details.pidol.vocal						{ text-align: center; }
-td.details.pidol.dance						{ text-align: center; }
-td.details.pidol.visual						{ text-align: center; }
-td.details.pidol.mental						{ text-align: center; }
-td.details.pidol.cost						{ text-align: center; }
-td.details.pidol.implement					{ text-align: center; }
-
-th.details.pidol.potential-idol-skill.skill-name	{ width: 25%; }
-th.details.pidol.potential-idol-skill.level			{ width: 5%; }
-th.details.pidol.potential-idol-skill.description	{ width: 70%; }
-
-th.details.pidol.potential-idol-skill.skill-name	{ width: 25%; }
-th.details.pidol.potential-idol-skill.effect		{ width: 25%; }
-th.details.pidol.potential-idol-skill.level-1		{ width: 10%; }
-th.details.pidol.potential-idol-skill.level-2		{ width: 10%; }
-th.details.pidol.potential-idol-skill.level-3		{ width: 10%; }
-th.details.pidol.potential-idol-skill.level-4		{ width: 10%; }
-th.details.pidol.potential-idol-skill.level-5		{ width: 10%; }
-td.details.pidol.potential-idol-skill.time			{ text-align: center; }
-td.details.pidol.potential-idol-skill.value			{ text-align: center; }
-td.details.pidol.potential-idol-skill.level			{ text-align: center; }
-
-th.details.pidol.potential-idol-skill.effect		{ width: 70%; }
-
-th.details.pidol.idol-event.event-name		{ width: 28%; }
-th.details.pidol.idol-event.description		{ width: 72%; }
-
-h4.pidol						{ margin-bottom: 0.2em; }
-
-/* Ｓキャラ */
-table.list.schara				{ width: 780px; }
-
-th.list.schara.index			{ width: 5%; }
-th.list.schara.rarity			{ width: 6%; }
-th.list.schara.idolname			{ width: 12%; }
-th.list.schara.cardname			{ width: 45%; }
-
-th.list.schara.unitname			{ width: 14%; } /* 44 */
-th.list.schara.obtain			{ width: 16%; }
-th.list.schara.implement		{ width: 14%; }
-
-td.list.schara.index			{ text-align: center; }
-td.list.schara.rarity			{ text-align: center; }
-td.list.schara.idolname			{ text-align: center; }
-td.list.schara.unitname			{ text-align: center; }
-td.list.schara.obtain			{ text-align: center; }
-td.list.schara.implement		{ text-align: center; }
-
-td.list.schara.rarity			{ font-weight: bold; }
-td.list.schara.rarity.rarity-1	{ color: #aaa; }
-td.list.schara.rarity.rarity-2	{ color: #22f; }
-td.list.schara.rarity.rarity-3	{ color: #f00; }
-
-th.removed-cell					{ display: none; }
-td.removed-cell					{ display: none; }
-td.invisible					{ display: none; }
-
-table.details.schara			{ width: 780px; }
-table.details.schara.summary	{ margin-top: 1em; }
-
-th.details.schara.rarity		{ width: 5%; }
-th.details.schara.cardname		{ width: 55%; }
-th.details.schara.level			{ width: 15%; }
-th.details.schara.good-schedule	{ width: 25%; }
-
-th.details.schara.obtain		{ width: 75%; }
-th.details.schara.implement		{ width: 25%; }
-
-th.details.schara.support-effect.level			{ width: 5%; }
-th.details.schara.support-effect.effect-name	{ width: 35%; }
-th.details.schara.support-effect.description	{ width: 60%; }
-
-th.details.schara.support-skill.skill-name		{ width: 40%; }
-th.details.schara.support-skill.description		{ width: 60%; }
-
-th.details.schara.support-event.event-name		{ width: 28%; }
-th.details.schara.support-event.description		{ width: 72%; }
-
-td.details.schara.level			{ text-align: center; }
-td.details.schara.implement		{ text-align: center; }
-td.details.schara.good-schedule	{ text-align: center; }
-
-h4.schara						{ margin-bottom: 0.2em; }
