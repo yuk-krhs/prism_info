@@ -224,7 +224,8 @@ table.details td.rate					{ text-align: center; }
 table.details td.exp					{ text-align: right; }
 table.details td.filter					{ text-align: center; }
 table.details td.rank					{ text-align: center; }
-
+table.details td.unitname				{ text-align: center; }
+table.details td.time					{ text-align: center; }
 
 /*----- 共通 -----*/
 span.star.solid							{ color: #f66; margin: 0px; padding: 0px; letter-spacing: -3px; }
@@ -355,7 +356,7 @@ table.update td.id						{ width: 35%; word-wrap: break-word; }
 /* ID非表示 */
 table.update th.update					{ width: 15%; }
 table.update td.update					{ width: 85%; }
-table.update td.update.id				{ width: 0%; display: none; }
+table.update td.id						{ width: 0%; display: none; }
 
 span.update.pidol.star.label			{ width: 32px; }
 span.update.support.rarity.label		{ width: 40px; }
@@ -434,12 +435,12 @@ table.list.rhythm td.hard				{ background-color: var(--ha-bg2); }
 table.list.rhythm td.expert				{ background-color: var(--ex-bg2); }
 table.list.rhythm td.master				{ background-color: var(--ma-bg2); }
 
-table.list.rhythm td.navi	 			{ border-style: none; }
-table.details.song td.implement			{ text-align: left; }
+table.list.rhythm.navi td	 			{ border-style: none; }
+table.list.rhythm.navi td	 			{ text-align: center; }
 
 table.list.rhythm td.difficulty:hover 	{ background-color: var(--hover-hilight2); }
 table.list.rhythm td.songname:hover 	{ background-color: var(--hover-hilight1); }
-table.list.rhythm td.navi.link:hover 	{ background-color: var(--hover-hilight1); }
+table.list.rhythm td.link:hover 		{ background-color: var(--hover-hilight1); }
 
 a.rhythm	 							{ display: block; }
 a.song	 								{ display: block; }
@@ -564,12 +565,15 @@ div.idolcolor							{ display: block; margin: 0px; padding: 0px; }
 div.unitcolor							{ margin-top: 0.8em; margin-bottom: 0.8em; }
 div.details.unit.unitcolor				{ display: block; padding-top: 15px; padding-bottom: 15px; }
 
+/*
 td.details.unit							{ text-align: center; }
 td.details.unit.unitname				{ text-align: left; }
 td.details.unit.kana					{ padding: 0px; }
+*/
 
+table.details.unit td,th				{ text-align: center; }
 table.details.unit td.unitcolor			{ width: 12%; }
-table.details.unit td.unitname			{ width: 88%; padding-left: 10px; font-size: var(--font-size-ll); }
+table.details.unit td.unitname			{ width: 88%; font-size: var(--font-size-ll); }
 table.details.unit td.idol-col-1-2		{ width: (88% / 2); }
 table.details.unit td.idol-col-2-2		{ width: (88% / 2); }
 table.details.unit td.idol-col-1-3		{ width: (88% / 3); }
@@ -698,7 +702,8 @@ table.list.story th.chapter.unit-7		{ background-color: var(--unit-7); color: wh
 table.list.story th.chapter.unit-8		{ background-color: var(--unit-8); color: white; }
 
 table.list.story.idol					{ margin-top: 0em; }
-table.list.story.idol td.idol			{ text-align: left; }
+table.list.story.idol td				{ text-align: left; }
+table.list.story.idol td.implement		{ text-align: center; }
 table.list.story.idol td.event.point	{ padding-right: 10px; }
 
 table.list.story th.chapter.idol-1		{ background-color: var(--idol-1); }
@@ -796,13 +801,16 @@ table.details.shop.jewel th.ratio		{ width: 20%; }
 /*table.details.shop.pass th.product	{ width: 50%; }*/
 /*table.details.shop.pass th.price		{ width: 16%; }*/
 
-table.details td.shop.price				{ text-align: right; }
+table.details td.price					{ text-align: right; }
 table.details td.price					{ padding-right: 0.5em; }
 table.details td.ratio					{ text-align: center; }
 
+div.price								{ display: flex; }
+div.price span.amount					{ display: flex; padding-right: 1em; }
 div.product								{ display: flex; }
 span.amount								{ }
 span.itemname							{ text-align: left; flex-grow: 1; }
+span.price								{ text-align: left; flex-grow: 1; padding-left: 0.5em; }
 
 span.paid.jewel {
 	filter:		contrast(100%) sepia(0%) hue-rotate(210deg);
