@@ -831,6 +831,18 @@ h3.shop {
 	margin-bottom:	0.2em;
 }
 
+/*----- カード -----*/
+table.list.card		{ width: 1800px; }
+
+table.list.card th.cardname		{ width: 13%; }
+table.list.card th.idolname		{ width: 7%; }
+table.list.card th.skillid		{ width: 6%; }
+table.list.card th.skillname	{ width: 16%; }
+table.list.card th.level		{ width: 3%; }
+table.list.card th.effectid		{ width: 5%; }
+table.list.card th.effectname	{ width: 45%; }
+table.list.card th.effectid		{ width: 5%; }
+
 /* 無効化 */
 .removed-cell							{ display: none; }
 .invisible								{ display: none; }
@@ -846,3 +858,15 @@ a.invalid
 	text-decoration:	none;
 	color:				var(--color);
 }
+
+/*----- 交換所 -----*/
+table.list.exchange						{ margin-top: 0.5em; }
+table.details.exchange					{ margin-top: 0.5em; }
+
+table.list.exchange th.name				{ width: 40%; }
+table.list.exchange th.data				{ width: 60%; }
+
+table.details.exchange th.product		{ width: 55%; }
+table.details.exchange th.price			{ width: 35%; }
+table.details.exchange th.limit			{ width: 10%; }
+table.details.exchange td.limit			{ text-align: center; }
