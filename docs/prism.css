@@ -870,3 +870,17 @@ table.details.exchange th.product		{ width: 55%; }
 table.details.exchange th.price			{ width: 35%; }
 table.details.exchange th.limit			{ width: 10%; }
 table.details.exchange td.limit			{ text-align: center; }
+
+/*----- プロデュース -----*/
+table.list.produce						{ margin-top: 0.5em; }
+
+table.list.produce th.id				{ width: 10%; }
+table.list.produce th.vocal				{ width: 8%; }
+table.list.produce th.dance				{ width: 8%; }
+table.list.produce th.visual			{ width: 8%; }
+table.list.produce th.mental			{ width: 8%; }
+table.list.produce th.skill.id			{ width: 8%; }
+table.list.produce th.cost				{ width: 8%; }
+table.list.produce th.usable-count		{ width: 8%; }
+table.list.produce th.description		{ width: 34%; }
+
