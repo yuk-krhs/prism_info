@@ -884,3 +884,26 @@ table.list.produce th.cost				{ width: 8%; }
 table.list.produce th.usable-count		{ width: 8%; }
 table.list.produce th.description		{ width: 34%; }
 
+
+/*----- イベント -----*/
+table.list.event.boxgasha				{  }
+
+table.list.event.boxgasha th.box-number		{ width: 15%; }
+table.list.event.boxgasha th.amount			{ width: 10%; }
+table.list.event.boxgasha th.product		{ width: 75%; }
+table.list.event.boxgasha td.box-number		{ text-align: center; }
+table.list.event.boxgasha td.count			{ text-align: center; }
+
+table.list.event.point-ranking th.rank		{ width: 20%; }
+table.list.event.point-ranking th.product	{ width: 80%; }
+table.list.event.point-ranking td.rank		{ text-align: center; }
+
+table.list.event.score-ranking th.rank		{ width: 20%; }
+table.list.event.score-ranking th.product	{ width: 80%; }
+table.list.event.score-ranking td.rank		{ text-align: center; }
+
+p.box-number	{
+	font-size:		var(--font-size-l);
+	font-weight:	bold;
+	margin-bottom:	0.5em;
+}
