@@ -157,21 +157,24 @@
     { "Index": 150, "TimeValue": 122.8676, "Time": "02:02.8676", "Line": 0, "Width": 0, "Type": 112 }
   ],
   "NoteLines": [
-    { "Index": 0, "Head": 22, "Tail": 23, "Type": 0, "Notes": [     88, 89, 90 ] },
-    { "Index": 1, "Head": 20, "Tail": 21, "Type": 0, "Notes": [     91, 92, 93 ] },
-    { "Index": 2, "Head": 30, "Tail": 31, "Type": 2, "Notes": [     94, 95, 96 ] },
-    { "Index": 3, "Head": 28, "Tail": 29, "Type": 2, "Notes": [     97, 98, 99 ] },
-    { "Index": 4, "Head": 32, "Tail": 33, "Type": 2, "Notes": [     100, 101, 102, 103, 104, 105, 106 ] },
-    { "Index": 5, "Head": 34, "Tail": 35, "Type": 2, "Notes": [     107, 108, 109, 110, 111, 112, 113 ] },
-    { "Index": 6, "Head": 36, "Tail": 38, "Type": 2, "Notes": [     114, 115, 116, 117 ] },
-    { "Index": 7, "Head": 38, "Tail": 37, "Type": 1, "Notes": [     118, 119, 120 ] },
-    { "Index": 8, "Head": 39, "Tail": 40, "Type": 2, "Notes": [     121, 122, 123 ] },
-    { "Index": 9, "Head": 40, "Tail": 41, "Type": 1, "Notes": [     124, 125, 126 ] },
-    { "Index": 10, "Head": 53, "Tail": 54, "Type": 0, "Notes": [     127, 128, 129 ] },
-    { "Index": 11, "Head": 55, "Tail": 56, "Type": 0, "Notes": [     130, 131, 132 ] },
-    { "Index": 12, "Head": 62, "Tail": 63, "Type": 2, "Notes": [     133, 134, 135 ] },
-    { "Index": 13, "Head": 64, "Tail": 65, "Type": 2, "Notes": [     136, 137, 138 ] },
-    { "Index": 14, "Head": 72, "Tail": 73, "Type": 0, "Notes": [     139 ] },
-    { "Index": 15, "Head": 73, "Tail": 74, "Type": 2, "Notes": [     140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150 ] }
+    { "Index": 0, "Head": 22, "Tail": 23, "Type": 0, "Notes": [ 88, 89, 90 ] },
+    { "Index": 1, "Head": 20, "Tail": 21, "Type": 0, "Notes": [ 91, 92, 93 ] },
+    { "Index": 2, "Head": 30, "Tail": 31, "Type": 2, "Notes": [ 94, 95, 96 ] },
+    { "Index": 3, "Head": 28, "Tail": 29, "Type": 2, "Notes": [ 97, 98, 99 ] },
+    { "Index": 4, "Head": 32, "Tail": 33, "Type": 2, "Notes": [ 100, 101, 102, 103, 104, 105, 106 ] },
+    { "Index": 5, "Head": 34, "Tail": 35, "Type": 2, "Notes": [ 107, 108, 109, 110, 111, 112, 113 ] },
+    { "Index": 6, "Head": 36, "Tail": 38, "Type": 2, "Notes": [ 114, 115, 116, 117 ] },
+    { "Index": 7, "Head": 38, "Tail": 37, "Type": 1, "Notes": [ 118, 119, 120 ] },
+    { "Index": 8, "Head": 39, "Tail": 40, "Type": 2, "Notes": [ 121, 122, 123 ] },
+    { "Index": 9, "Head": 40, "Tail": 41, "Type": 1, "Notes": [ 124, 125, 126 ] },
+    { "Index": 10, "Head": 53, "Tail": 54, "Type": 0, "Notes": [ 127, 128, 129 ] },
+    { "Index": 11, "Head": 55, "Tail": 56, "Type": 0, "Notes": [ 130, 131, 132 ] },
+    { "Index": 12, "Head": 62, "Tail": 63, "Type": 2, "Notes": [ 133, 134, 135 ] },
+    { "Index": 13, "Head": 64, "Tail": 65, "Type": 2, "Notes": [ 136, 137, 138 ] },
+    { "Index": 14, "Head": 72, "Tail": 73, "Type": 0, "Notes": [ 139 ] },
+    { "Index": 15, "Head": 73, "Tail": 74, "Type": 2, "Notes": [ 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150 ] }
+  ],
+  "SpeedChanges": [
+    
   ]
 }

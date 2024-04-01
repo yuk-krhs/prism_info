@@ -184,13 +184,13 @@
     { "Index": 177, "TimeValue": 62.7049, "Time": "01:02.7049", "Line": 0, "Width": 0, "Type": 112 }
   ],
   "NoteLines": [
-    { "Index": 0, "Head": 31, "Tail": 32, "Type": 0, "Notes": [     96, 97, 98 ] },
-    { "Index": 1, "Head": 33, "Tail": 34, "Type": 0, "Notes": [     99, 100, 101 ] },
-    { "Index": 2, "Head": 39, "Tail": 40, "Type": 2, "Notes": [     102, 103, 104 ] },
-    { "Index": 3, "Head": 49, "Tail": 46, "Type": 2, "Notes": [     105, 106, 107 ] },
-    { "Index": 4, "Head": 50, "Tail": 51, "Type": 0, "Notes": [     108, 109, 110 ] },
-    { "Index": 5, "Head": 52, "Tail": 53, "Type": 0, "Notes": [     111, 112, 113 ] },
-    { "Index": 6, "Head": 58, "Tail": 59, "Type": 0, "Notes": [     114 ] },
+    { "Index": 0, "Head": 31, "Tail": 32, "Type": 0, "Notes": [ 96, 97, 98 ] },
+    { "Index": 1, "Head": 33, "Tail": 34, "Type": 0, "Notes": [ 99, 100, 101 ] },
+    { "Index": 2, "Head": 39, "Tail": 40, "Type": 2, "Notes": [ 102, 103, 104 ] },
+    { "Index": 3, "Head": 49, "Tail": 46, "Type": 2, "Notes": [ 105, 106, 107 ] },
+    { "Index": 4, "Head": 50, "Tail": 51, "Type": 0, "Notes": [ 108, 109, 110 ] },
+    { "Index": 5, "Head": 52, "Tail": 53, "Type": 0, "Notes": [ 111, 112, 113 ] },
+    { "Index": 6, "Head": 58, "Tail": 59, "Type": 0, "Notes": [ 114 ] },
     { "Index": 7, "Head": 59, "Tail": 60, "Type": 0 },
     { "Index": 8, "Head": 60, "Tail": 61, "Type": 0 },
     { "Index": 9, "Head": 61, "Tail": 62, "Type": 0 },
@@ -202,17 +202,20 @@
     { "Index": 15, "Head": 67, "Tail": 68, "Type": 0 },
     { "Index": 16, "Head": 68, "Tail": 69, "Type": 0 },
     { "Index": 17, "Head": 69, "Tail": 70, "Type": 0 },
-    { "Index": 18, "Head": 70, "Tail": 72, "Type": 0, "Notes": [     115 ] },
-    { "Index": 19, "Head": 72, "Tail": 71, "Type": 0, "Notes": [     116 ] },
-    { "Index": 20, "Head": 71, "Tail": 73, "Type": 0, "Notes": [     117, 118, 119 ] },
-    { "Index": 21, "Head": 73, "Tail": 74, "Type": 0, "Notes": [     120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138 ] },
-    { "Index": 22, "Head": 3, "Tail": 4, "Type": 0, "Notes": [     139, 140, 141 ] },
-    { "Index": 23, "Head": 5, "Tail": 7, "Type": 0, "Notes": [     142, 143, 144, 145, 146, 147, 148, 149 ] },
-    { "Index": 24, "Head": 6, "Tail": 8, "Type": 0, "Notes": [     150, 151, 152, 153, 154, 155, 156, 157 ] },
-    { "Index": 25, "Head": 19, "Tail": 20, "Type": 0, "Notes": [     158, 159, 160 ] },
-    { "Index": 26, "Head": 23, "Tail": 24, "Type": 0, "Notes": [     161, 162, 163, 164, 165, 166, 167 ] },
-    { "Index": 27, "Head": 25, "Tail": 26, "Type": 2, "Notes": [     168, 169, 170, 171, 172, 173 ] },
-    { "Index": 28, "Head": 90, "Tail": 91, "Type": 0, "Notes": [     93, 174, 175 ] },
-    { "Index": 29, "Head": 91, "Tail": 92, "Type": 0, "Notes": [     94, 176, 177 ] }
+    { "Index": 18, "Head": 70, "Tail": 72, "Type": 0, "Notes": [ 115 ] },
+    { "Index": 19, "Head": 72, "Tail": 71, "Type": 0, "Notes": [ 116 ] },
+    { "Index": 20, "Head": 71, "Tail": 73, "Type": 0, "Notes": [ 117, 118, 119 ] },
+    { "Index": 21, "Head": 73, "Tail": 74, "Type": 0, "Notes": [ 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138 ] },
+    { "Index": 22, "Head": 3, "Tail": 4, "Type": 0, "Notes": [ 139, 140, 141 ] },
+    { "Index": 23, "Head": 5, "Tail": 7, "Type": 0, "Notes": [ 142, 143, 144, 145, 146, 147, 148, 149 ] },
+    { "Index": 24, "Head": 6, "Tail": 8, "Type": 0, "Notes": [ 150, 151, 152, 153, 154, 155, 156, 157 ] },
+    { "Index": 25, "Head": 19, "Tail": 20, "Type": 0, "Notes": [ 158, 159, 160 ] },
+    { "Index": 26, "Head": 23, "Tail": 24, "Type": 0, "Notes": [ 161, 162, 163, 164, 165, 166, 167 ] },
+    { "Index": 27, "Head": 25, "Tail": 26, "Type": 2, "Notes": [ 168, 169, 170, 171, 172, 173 ] },
+    { "Index": 28, "Head": 90, "Tail": 91, "Type": 0, "Notes": [ 93, 174, 175 ] },
+    { "Index": 29, "Head": 91, "Tail": 92, "Type": 0, "Notes": [ 94, 176, 177 ] }
+  ],
+  "SpeedChanges": [
+    
   ]
 }
