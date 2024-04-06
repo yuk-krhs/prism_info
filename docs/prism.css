@@ -907,3 +907,75 @@ p.box-number	{
 	font-weight:	bold;
 	margin-bottom:	0.5em;
 }
+
+/* プロデュース */
+table.list.produce					{ margin-top: 1em; }
+table.list.produce th.unitname		{ width: 20%; }
+table.list.produce th.chapter		{ width: 50%; }
+table.list.produce th.difficulty	{ width: 10%; }
+/*table.list.produce td.chapter		{ text-align: center; }*/
+
+table.list.cards				{ margin-top: 1em; }
+table.list.cards th.cardname	{ width: 30%; }
+table.list.cards th.cost		{ width: 6%; }
+table.list.cards th.effect		{ width: 64%; }
+
+table.list.cards td.cost		{ text-align: center; }
+
+table.list.cards div.effect-desc
+{
+	display:			flex;
+	flex-direction:		row;
+	align-items:		center;
+}
+
+table.list.cards div.appeal
+{
+	width:				1.5em;
+	text-align:			center;
+	margin-right:		0.5em;
+}
+
+table.list.cards span.appeal
+{
+	display:			block;
+}
+
+table.list.cards span.appeal
+{
+	font-size:			var(--font-size-l);
+	font-weight:		900;
+}
+
+table.list.cards span.appeal.vo	{ color: #f0c; }
+table.list.cards span.appeal.da	{ color: #44f; }
+table.list.cards span.appeal.vi	{ color: #f60; }
+
+table.list.cards div.effect
+{
+	flex-grow:			1;
+}
+
+table.list.cards span.effect
+{
+	display:			block;
+}
+
+/* 用語 */
+div.term {
+	background-color: #f4f4f4;
+	width: 780px;
+}
+
+div.term.highlight {
+	background-color: #dfd;
+}
+
+div.term.highlight div {
+	background-color: #dfd;
+}
+
+h4.term {
+	border-bottom:	1px solid #000;
+	margin-top:		1em;
+}

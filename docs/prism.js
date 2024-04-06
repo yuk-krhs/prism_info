@@ -2,6 +2,15 @@ let cookies = null;
 
 document.addEventListener('keydown', function(event) { if(event.key === 'Escape') history.back(); });
 
+window.onload = function()
+{
+    var hash    = window.location.hash.substr(1);
+    var element = document.getElementById(hash);
+
+    if(element)
+        element.classList.add('highlight');
+}
+
 function parse_cookies()
 {
     cookies = document.cookie.split(';')
