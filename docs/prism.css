@@ -909,13 +909,13 @@ p.box-number	{
 }
 
 /* プロデュース */
-table.list.produce					{ margin-top: 1em; }
+/*table.list.produce					{ margin-top: 1em; }*/
 table.list.produce th.unitname		{ width: 20%; }
 table.list.produce th.chapter		{ width: 50%; }
 table.list.produce th.difficulty	{ width: 10%; }
 /*table.list.produce td.chapter		{ text-align: center; }*/
 
-table.list.cards				{ margin-top: 1em; }
+/*table.list.cards				{ margin-top: 1em; }*/
 table.list.cards th.cardname	{ width: 30%; }
 table.list.cards th.cost		{ width: 6%; }
 table.list.cards th.effect		{ width: 64%; }
@@ -979,3 +979,14 @@ h4.term {
 	border-bottom:	1px solid #000;
 	margin-top:		1em;
 }
+
+/*table.list.subseasons				{ margin-top: 1em; }*/
+table.list.subseasons th.name		{ width: 18%; }
+table.list.subseasons th.condition	{ width: 12%; }
+table.list.subseasons th.details	{ width: 70%; }
+
+table.list.subseasons td.name		{ text-align: center; }
+table.list.subseasons td.condition	{ text-align: center; }
+table.list.subseasons td.parameter	{ text-align: center; }
+
+span.strong	{ font-weight: bold; }
