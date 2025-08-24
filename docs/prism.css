@@ -990,3 +990,19 @@ table.list.subseasons td.condition	{ text-align: center; }
 table.list.subseasons td.parameter	{ text-align: center; }
 
 span.strong	{ font-weight: bold; }
+
+.fill-inline {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+#popup {
+	position: absolute;
+	display: none;
+	background: #fff;
+	border: 1px solid #333;
+	padding: 10px;
+	z-index: 1000;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}

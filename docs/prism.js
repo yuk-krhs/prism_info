@@ -113,3 +113,23 @@ function restructSCharaTable(th)
 
     // todo クッキーに選択状態を保存
 }
+
+function showPopup(popup, elem)
+{
+    const rect = elem.getBoundingClientRect();
+    const left = rect.left + window.scrollX;
+    const top  = rect.top  + window.scrollY;
+
+    // 内容取得＆表示
+    popup.innerHTML     = elem.getAttribute('data-popup');
+    popup.style.left    = left + 'px';
+    popup.style.top     = top + 'px';
+    popup.style.display = 'block';
+
+    event.stopPropagation(); // 他のclickイベント発火防止
+}
+
+function hidePopup(popup)
+{
+    popup.style.display = 'none';
+}
